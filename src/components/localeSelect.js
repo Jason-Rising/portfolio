@@ -57,7 +57,7 @@ function LocaleSelect() {
         variant="text"
         color="black"
         startIcon={<GlobeIcon width="20" height="20" />}
-        endIcon={<DownArrowIcon width="10" height="10" />}
+        endIcon={<DownArrowIcon style={{marginTop:'10px'}} width="15" height="15" />}
       >
         {lang}
       </Button>

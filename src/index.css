@@ -97,21 +97,21 @@ code {
 }
 
 .banner {
+  position: relative;
+  user-select: none;
   justify-content: space-between;
   background-color: #7f8ac7;
   background-attachment: scroll, scroll;
-  background-image: url("./assets/images/bg.jpg");
+  background-image: url("./assets/images/overlay.png"), url("./assets/images/bg.jpg");
   background-position: center,							top left;
   background-repeat: repeat,								no-repeat;
   background-size: cover,250%; /*orignal 250%*/
-  object-fit: fill;
   color: rgba(255, 255, 255, 0.5);
   height: 100%;
-  left: 0;
   padding: 8em 4em;
-  text-align: right;
-  top: 0;
   width: 30%;
+  color: white;
+  box-sizing: border-box
 }
 
 .main {
@@ -127,42 +127,51 @@ code {
   .main {
     flex: 1 0 auto;
     width: 100%;
+    padding: 0px;
   }
   .banner {
     height: 30%;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .banner .icons h3, h6{
+    font-size: 1px
+  }
+
+  .banner .icons {
+    justify-content: center;
   }
 }
 
-.home-banner {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
+.banner .profile {
+  border-radius: 50%;
+  width: 150px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner .icons {
   display: flex;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -moz-align-items: -moz-flex-end;
-  -webkit-align-items: -webkit-flex-end;
-  -ms-align-items: -ms-flex-end;
-  align-items: flex-end;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  background-color: #7f8ac7;
-  background-attachment: scroll, scroll;
-  background-image: url("./assets/images/bg.jpg");
-  background-position: center,							top left;
-  background-repeat: repeat,								no-repeat;
-  background-size: cover,								250%; /*orignal 250%*/
-  object-fit: fill;
-  color: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  left: 0;
-  padding: 8em 4em;
-  position: fixed;
-  text-align: right;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+  padding-top: 30px;
+}
+
+.banner .icons img {
+  height: 35px;
+  opacity: 50%;
+}
+
+.banner .icons img:hover {
+  height: 35px;
+  opacity: 100%;
+  transition: 200ms;
+}
+
+.banner-locale {
+  position: absolute; 
+  right: 0;
   top: 0;
-  width: 30%;
+  padding: 10px
 }
