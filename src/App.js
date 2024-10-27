@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Typography, Box} from "@mui/material";
+import LocaleSelect from "./components/localeSelect";
+import React from 'react';
+import { useTranslation } from "react-i18next";
+import { red } from "@mui/material/colors";
 
 function App() {
+
+  const [t, i18n] = useTranslation("global");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <LocaleSelect/>
+      <Typography variant="h3">{t("home.title")}</Typography> 
+    </Container>
   );
 }
+
 
 export default App;
