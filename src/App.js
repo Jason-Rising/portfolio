@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes, ThemeProvider, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, createTheme, Grid2, responsiveFontSizes, ThemeProvider, Typography } from "@mui/material";
 import LocaleSelect from "./components/localeSelect";
 import React from 'react';
 import { useTranslation } from "react-i18next";
@@ -6,6 +6,7 @@ import profile from './assets/images/profile.jpg';
 import youtube from './assets/icons/youtube.svg';
 import instagram from './assets/icons/instagram.svg';
 import github from './assets/icons/github.svg';
+import Widget from "./components/widget";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <div  className="banner-locale">
           <LocaleSelect/>
         </div>
+        <div className="line-break"/>
         <img className="profile" src={profile}></img>
         <Typography variant="h3">Jason Rising</Typography> 
         <Typography sx={{opacity:'80%'}} variant="h6">{t("home.job_title")}</Typography> 
@@ -32,7 +34,22 @@ function App() {
       </section>
       </ThemeProvider>
       <section className="main">
-        <Typography variant="h3">{t("home.title")}</Typography> 
+        <div className="main-container">
+          <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }}>
+            <Grid2>
+              <Widget img={profile} />
+            </Grid2>
+            <Grid2>
+              <Widget img={profile} />
+            </Grid2>
+            <Grid2>
+              <Widget img={profile} />
+            </Grid2>
+            <Grid2>
+              <Widget img={profile} />
+            </Grid2>
+          </Grid2>
+        </div>
       </section>
     </div>
   );

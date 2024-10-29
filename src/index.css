@@ -97,7 +97,7 @@ code {
 }
 
 .banner {
-  position: relative;
+  position: fixed;
   user-select: none;
   justify-content: space-between;
   background-color: #7f8ac7;
@@ -116,6 +116,7 @@ code {
 
 .main {
   width: 70%;
+  margin-left: 30vw; 
 }
 
 /* Responsive adjustment for screen width 980px or less */
@@ -128,9 +129,11 @@ code {
     flex: 1 0 auto;
     width: 100%;
     padding: 0px;
+    margin: 0; 
   }
   .banner {
-    height: 30%;
+    position: relative;
+    height: auto;
     text-align: center;
     padding: 50px;
   }
@@ -141,6 +144,10 @@ code {
 
   .banner .icons {
     justify-content: center;
+  }
+
+  .banner .line-break {
+    visibility: hidden;
   }
 }
 
@@ -175,3 +182,44 @@ code {
   top: 0;
   padding: 10px
 }
+
+.banner .line-break {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 95%;
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 55px; 
+  background-color: white;
+  opacity: 0.2;
+}
+
+/* Main container */
+.main-container {
+  padding: 50px;
+  padding-top: 120px;         
+}
+
+.main-container * {
+
+}
+
+/* Widgets */
+.image-card {
+  position: relative;
+  max-width: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.widget img {
+   transition: 300ms;
+}
+.widget:hover img {
+  transition: 300ms;
+  scale: 105%;
+}
+
