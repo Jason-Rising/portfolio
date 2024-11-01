@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'react-vertical-timeline-component/style.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 import global_en from './locales/en/global.json';
 import global_de from './locales/de/global.json';
 import i18next from 'i18next';
