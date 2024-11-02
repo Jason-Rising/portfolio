@@ -46,8 +46,16 @@ function App() {
       </ThemeProvider>
       <section className="main">
         <div className="main-container">
-          <Button onClick={()=>setShowProjects(true)}>Projects</Button>
-          <Button onClick={()=>setShowProjects(false)}>Timeline</Button>
+          <div className="navbar">
+            <Button className={!showProjects ? "active" : ""}  onClick={()=>setShowProjects(true)}>Projects</Button>
+            <Button className={!showProjects ? "active" : ""} onClick={()=>setShowProjects(false)}>Timeline</Button>  
+            <div
+                className="underline"
+                style={{
+                    transform: showProjects ? "translateX(0)" : "translateX(100%)",
+                }}
+            />
+          </div>
           {/* Timeline */}
           {!showProjects ? 
           <VerticalTimeline lineColor={ "#c9c9c9" } layout="1-column-left"
@@ -77,7 +85,7 @@ function App() {
             }
           </VerticalTimeline>
           :
-            <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }}>
+            <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='fade-in-right'>
             <Grid2>
               <Widget img={profile} />
             </Grid2>

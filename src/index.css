@@ -286,3 +286,50 @@ code {
 }
 
 
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to far left and right */
+  align-items: center;
+  position: relative;
+  padding: 8px 0;
+  margin-bottom: 10px;
+
+}
+
+.navbar Button {
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  flex: 1; /* Ensures each button takes equal space */
+  text-align: center; /* Centers text within each button */
+}
+
+.navbar .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50%; /* Adjusts underline to cover the width of each button */
+  background-color: #007bff; /* Set your desired color */
+  transition: transform 0.3s ease; /* Smooth transition for underline */
+}
+
+.navbar Button.active {
+  color: #007bff; /* Optional: Set active color for the selected button */
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(40px); /* Start slightly to the right */
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0); /* Move to the final position */
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.4s ease-out forwards; /* Smooth easing */
+}
