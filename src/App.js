@@ -1,6 +1,6 @@
-import { createTheme, responsiveFontSizes, ThemeProvider, Typography } from "@mui/material";
+import { Button, createTheme, Grid2, responsiveFontSizes, ThemeProvider, Typography } from "@mui/material";
 import LocaleSelect from "./components/localeSelect";
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 import profile from './assets/images/profile.jpg';
 import youtube from './assets/icons/youtube.svg';
@@ -12,12 +12,15 @@ import TimelineElement from "./components/timelineElement";
 
 import { ReactComponent as WorkIcon } from './assets/icons/work.svg';
 import { ReactComponent as SchoolIcon } from './assets/icons/graduate-cap.svg';
+import Widget from "./components/widget";
 
 
 function App() {
 
   const [t] = useTranslation("global");
   
+  const [showProjects, setShowProjects] = useState(true);
+
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
 
@@ -43,16 +46,19 @@ function App() {
       </ThemeProvider>
       <section className="main">
         <div className="main-container">
+          <Button onClick={()=>setShowProjects(true)}>Projects</Button>
+          <Button onClick={()=>setShowProjects(false)}>Timeline</Button>
           {/* Timeline */}
-          <VerticalTimeline lineColor={ "#c9c9c9" } 
+          {!showProjects ? 
+          <VerticalTimeline lineColor={ "#c9c9c9" } layout="1-column-left"
           >
             {
               timelineElements.map(element => {
                 let iconStyleColor = element.isWork ? 'rgb(33, 150, 243)' : 'rgb(255, 131, 54)';
                 return (
                   <VerticalTimelineElement
-                    contentStyle={{ background: 'rgb(229 229 229)'}}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(229 229 229)' }}
+                    contentStyle={{ background: 'rgb(248, 248, 248)'}}
+                    contentArrowStyle={{ borderRight: '7px solid  rgb(248, 248, 248)' }}
                     key={element.id}
                     date={element.date}
                     dateClassName="date"
@@ -70,9 +76,8 @@ function App() {
               })
             }
           </VerticalTimeline>
-
-
-          {/* <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }}>
+          :
+            <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }}>
             <Grid2>
               <Widget img={profile} />
             </Grid2>
@@ -85,7 +90,8 @@ function App() {
             <Grid2>
               <Widget img={profile} />
             </Grid2>
-          </Grid2> */}
+          </Grid2>
+          }
         </div>
       </section>
     </div>
