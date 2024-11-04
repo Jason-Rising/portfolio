@@ -1,6 +1,6 @@
-import { Button, createTheme, Grid2, responsiveFontSizes, ThemeProvider, Typography } from "@mui/material";
+import { Button, createTheme, Grid2, responsiveFontSizes, ThemeProvider, Typography, useMediaQuery } from "@mui/material";
 import LocaleSelect from "./components/localeSelect";
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import profile from './assets/images/profile.jpg';
 import youtube from './assets/icons/youtube.svg';
@@ -13,6 +13,7 @@ import TimelineElement from "./components/timelineElement";
 import { ReactComponent as WorkIcon } from './assets/icons/work.svg';
 import { ReactComponent as SchoolIcon } from './assets/icons/graduate-cap.svg';
 import Widget from "./components/widget";
+import { ReactComponent as DownArrowIcon } from './assets/icons/down-arrow-outline.svg';
 
 
 function App() {
@@ -23,8 +24,12 @@ function App() {
 
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-
-  // timeline styles
+  const isMobile = useMediaQuery('(max-width:980px)');
+  
+  const targetDivRef = useRef(null);
+  const scrollToDiv = () => {
+    targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className='container'>
@@ -42,9 +47,10 @@ function App() {
           <a href="https://www.instagram.com/sketch343/"><img src={instagram}></img></a>
           <a href="https://github.com/Jason-Rising"><img src={github}></img></a>
         </div>
+        {isMobile ? <div className="banner-downarrow-mobile" onClick={scrollToDiv}><DownArrowIcon/></div> : null}
       </section>
       </ThemeProvider>
-      <section className="main">
+      <section className="main" ref={targetDivRef}>
         <div className="main-container">
           <div className="navbar">
             <Button className={!showProjects ? "active" : ""}  onClick={()=>setShowProjects(true)}>Projects</Button>
@@ -57,33 +63,51 @@ function App() {
             />
           </div>
           {/* Timeline */}
-          {!showProjects ? 
-          <VerticalTimeline lineColor={ "#c9c9c9" } layout="1-column-left"
-          >
-            {
+          {!showProjects ? (
+            !isMobile ?
+            <VerticalTimeline lineColor={ "#c9c9c9" } layout="1-column-left"
+            >
+              {
+                timelineElements.map(element => {
+                  let iconStyleColor = element.isWork ? 'rgb(33, 150, 243)' : 'rgb(255, 131, 54)';
+                  return (
+                    <VerticalTimelineElement
+                      contentStyle={{ background: 'rgb(248, 248, 248)'}}
+                      contentArrowStyle={{ borderRight: '7px solid  rgb(248, 248, 248)' }}
+                      key={element.id}
+                      date={element.date}
+                      dateClassName="date"
+                      icon={element.isWork ? <WorkIcon/> : <SchoolIcon/>}
+                      iconStyle={{ background: iconStyleColor }}
+                      >
+                      <TimelineElement 
+                      title={element.title}
+                      icon={element.icon}
+                      location={element.location}
+                      description={element.description}
+                      tags={element?.tags}/>
+                    </VerticalTimelineElement>
+                  )
+                })
+              }
+            </VerticalTimeline>
+            :
+            <div className="timeline-container-mobile fade-in-left">{
               timelineElements.map(element => {
-                let iconStyleColor = element.isWork ? 'rgb(33, 150, 243)' : 'rgb(255, 131, 54)';
                 return (
-                  <VerticalTimelineElement
-                    contentStyle={{ background: 'rgb(248, 248, 248)'}}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(248, 248, 248)' }}
-                    key={element.id}
-                    date={element.date}
-                    dateClassName="date"
-                    icon={element.isWork ? <WorkIcon/> : <SchoolIcon/>}
-                    iconStyle={{ background: iconStyleColor }}
-                    >
-                    <TimelineElement 
-                    title={element.title}
-                    icon={element.icon}
-                    location={element.location}
-                    description={element.description}
-                    tags={element?.tags}/>
-                  </VerticalTimelineElement>
+                  <TimelineElement 
+                      title={element.title}
+                      icon={element.icon}
+                      location={element.location}
+                      description={element.description}
+                      tags={element?.tags}
+                      isMobileView={true}
+                      date={element.date}/>
                 )
-              })
-            }
-          </VerticalTimeline>
+              })}
+              </div>
+            
+          )
           :
             <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='fade-in-right'>
             <Grid2>

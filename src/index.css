@@ -1,8 +1,11 @@
+@import './styles/animations.css';
+
 :root {
   --speed: 500ms;
 }
 
 body {
+  overscroll-behavior: none;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -110,11 +113,14 @@ code {
   min-width: 30vw;
   color: white;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .main {
   width: 70%;
   margin-left: 30vw; 
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Responsive adjustment for screen width 980px or less */
@@ -131,13 +137,16 @@ code {
   }
   .banner {
     position: relative;
-    height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
     text-align: center;
     padding: 50px;
+    padding-top: 100px;
+    
   }
   
   .banner .icons h3, h6{
-    font-size: 1px
+    font-size: 1px;
   }
 
   .banner .icons {
@@ -146,6 +155,20 @@ code {
 
   .banner .line-break {
     visibility: hidden;
+  }
+
+  .banner-downarrow-mobile {
+    justify-content: center;
+  }
+
+  .banner-downarrow-mobile * {
+    height: 50px;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 43.2%; 
+    margin-bottom: 50px;
+    
   }
 }
 
@@ -200,6 +223,14 @@ code {
   padding-top: 120px;      
 }
 
+@media (max-width: 980px) {
+  .main-container {
+    padding: 20px;
+    padding-top: 20px;      
+  }
+}
+
+
 /* Widgets */
 .image-card {
   position: relative;
@@ -243,7 +274,8 @@ code {
 }
 
 .timeline-element-img-container img {
-  width: 60px;
+  max-width: 60px;
+  height: auto;
 }
 
 .timeline-element-content-container {
@@ -319,17 +351,16 @@ code {
   color: #007bff; /* Optional: Set active color for the selected button */
 }
 
-@keyframes fadeInRight {
-  0% {
-      opacity: 0;
-      transform: translateX(40px); /* Start slightly to the right */
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0); /* Move to the final position */
-  }
-}
-
 .fade-in-right {
   animation: fadeInRight 0.4s ease-out forwards; /* Smooth easing */
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.4s ease-out forwards; /* Smooth easing */
+}
+
+.timeline-container-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }

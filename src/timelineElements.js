@@ -12,7 +12,7 @@ let timelineElements = [
         date: "2022 - Present",
         icon: <img src={Xero}/>,
         isWork: true,
-        tags: ["C#", "AWS", "DevOps", "Salesforce", "Monitoring"]
+
     },
     {
         id: 2,
@@ -25,24 +25,22 @@ let timelineElements = [
     },
     {
         id: 3,
-        title: "Software Engineer & Environment Artist",
-        location: "Legend Studios",
-        description: "Freelance game dev work for US based company Legend Studios. Developed environment assets and systems.",
-        date: "2020 - 2021",
-        icon: <img src={LegendStudios}/>,
-        isWork: true,
-        tags: ["Unity", "C#", "Blender"]
-
-    },
-    {
-        id: 4,
         title: "Software Engineer - Internship",
         location: "Xero",
         description: "Rotated with Developer Evangelism team in Xero. Managed Xero SDK, supported company integrations to the Xero marketplace",
         date: "Nov  2020 - Feb 2021",
         icon: <img src={Xero}/>,
         isWork: true,
-        tags: ["C#", "SDKs", "Video Creation"]
+    },
+    {
+        id: 4,
+        title: "Software Engineer & Environment Artist",
+        location: "Legend Studios",
+        description: "Freelance game dev work for US based company Legend Studios. Developed environment assets and systems.",
+        date: "2020 - 2021",
+        icon: <img src={LegendStudios}/>,
+        isWork: true,
+
     },
     {
         id: 5,
@@ -52,7 +50,6 @@ let timelineElements = [
         date: "2018 - 2019",
         icon: <img src={BrytenwaldaStudios}/>,
         isWork: true,
-        tags: ["Unity", "C#", "Blender"]
 
     }
 ];

@@ -3,7 +3,7 @@ import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Typography } 
 function Widget(props) {
     return (
         <Card className="widget"  sx={{ maxWidth: 400 }}>
-        <CardActionArea>
+        <CardActionArea onClick={props.onClick}>
           <CardMedia className="widget-img"
             component="img"
             height="200"

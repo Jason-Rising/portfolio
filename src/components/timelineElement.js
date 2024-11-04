@@ -15,7 +15,7 @@ function TimelineElement(props) {
     }, []);
 
     const collapsedTextStyle = {
-        WebkitLineClamp: 4,
+        WebkitLineClamp: 100,
         WebkitBoxOrient: 'vertical',
         overflow: 'hidden',
         display: '-webkit-box', 
@@ -29,6 +29,7 @@ function TimelineElement(props) {
             </div>
             <div className="timeline-element-content-container">
                 <Typography variant="h5">{props.title}</Typography>
+                {props.isMobileView && <Typography variant="text">{props.date}</Typography>}
                 <div className="locationContainer">
                     <img src={locationIcon}></img>
                     <Typography variant="text">{props.location}</Typography>
