@@ -19,7 +19,6 @@ code {
     monospace;
 }
 
-
 /* Locale Selector */
 .dropdown {
   display: inline-block;
@@ -122,6 +121,7 @@ code {
   height: 100vh;
   right: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Responsive adjustment for screen width 980px or less */
@@ -132,10 +132,10 @@ code {
   .banner,
   .main {
     position: static;
-    flex: 1 0 auto;
     width: 100%;
     padding: 0px;
     margin: 0; 
+    overflow-x:visible;
   }
   .banner {
     position: relative;
@@ -266,12 +266,20 @@ code {
 /* Timeline element */
 
 .timeline-element {
-  padding: 5px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   gap: 20px;
   user-select: none;
   -webkit-user-select: none;
+  box-sizing: border-box;
+}
+
+.timeline-element-img-container {
+  min-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  background-color: rgb(231 231 231);
 }
 
 .timeline-element-img-container img {
@@ -315,10 +323,8 @@ code {
 }
 
 .vertical-timeline-element-content {
-  width: 60%;
+  max-width: 60%;
 }
-
-
 
 .navbar {
   display: flex;
