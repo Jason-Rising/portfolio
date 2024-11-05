@@ -22,7 +22,9 @@ function App() {
         <div className='container'>
           <Banner onDownArrowClick={scrollToDiv} isMobile={isMobile} />
           
-          <section className="main" ref={targetDivRef}>
+          <div className='main'></div>
+
+          <div className="main" ref={targetDivRef}>
             <Routes>
               <Route path='/' element={
                 <div className="main-container">
@@ -41,7 +43,7 @@ function App() {
                 </div>
               } />
             </Routes>
-          </section>
+          </div>
         </div>
       </Router>
     </ThemeProvider>

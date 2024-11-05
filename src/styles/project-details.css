@@ -1,5 +1,5 @@
 @import './animations.css';
 
 .project-detail-view {
-    animation: fadeInRight 0.4s ease-out forwards; /* Smooth easing */
+    animation: fadeInRight 0.4s ease-out forwards; 
 }
