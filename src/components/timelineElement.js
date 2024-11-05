@@ -1,7 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import locationIcon from '../assets/icons/location.svg';
-import Tag from "./tag";
 import { useEffect, useRef, useState } from "react";
+import Tag from "./Tag";
 
 function TimelineElement(props) {
 
@@ -44,7 +44,7 @@ function TimelineElement(props) {
                 {props.tags && props.tags.length > 0 && (
                     <div className="tags">
                         {props.tags.map((txt, index) => (
-                            <Tag key={index} text={txt} />
+                             <Tag key={index} text={txt} />
                         ))}
                     </div>
                 )}
