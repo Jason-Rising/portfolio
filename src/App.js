@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import TimelineView from './components/TimelineView';
 import ProjectsView from './components/ProjectsView';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ProjectDetailsView from './components/ProjectDetailsView';
 
 function App() {
   const [showProjects, setShowProjects] = useState(true);
@@ -38,9 +39,7 @@ function App() {
               </div>
               }/>
               <Route path="/hello" element={
-                <div className="main-container">
-                  <div className='project-detail-view'>Hello world</div>
-                </div>
+                <ProjectDetailsView isMobile={isMobile} />
               } />
             </Routes>
           </div>

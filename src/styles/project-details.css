@@ -1,5 +1,137 @@
 @import './animations.css';
 
 .project-detail-view {
-    animation: fadeInRight 0.4s ease-out forwards; 
+}
+
+/* Banner */
+.project-detail-banner {
+    animation: fadeInTop 0.5s ease-out forwards; 
+    
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+    color: white;
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+.project-detail-banner svg {
+    height: 35px;
+    opacity: 0.8;
+    transition: transform 0.3s ease; 
+}
+
+.project-detail-banner:hover svg {
+    opacity: 1;
+    transform: scale(1.4);
+    transition: transform 0.3s ease; 
+}
+
+.project-detail-banner:hover .banner-return-text {
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+.project-detail-banner:hover .banner-title {
+    opacity: 0.3;
+    transition: opacity 0.3s ease; 
+}
+
+.banner-title {
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    transition: opacity 0.3s ease; 
+}
+
+.banner-return {
+    position: absolute;
+    bottom: 0;
+    padding: 50px;
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.banner-return-text {
+    position: relative; 
+    display: inline-block; 
+    opacity: 0;
+    user-select: none;
+    transition: opacity 0.3s ease; 
+}
+
+.banner-return-text::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0; 
+    height: 3px;
+    background-color: rgb(255, 255, 255); 
+    transition: width 0.3s ease; 
+}
+
+.project-detail-banner:hover .banner-return-text::after {
+    width: 100%; 
+}
+
+/* Description & Details */
+.project-detail-info-contianer {
+    animation: fadeInLeft 0.5s ease-out forwards; 
+
+    width: 100%;
+    height: calc(100vh - 300px);
+    display: flex;
+    gap: 100px;
+    box-sizing: border-box;
+    padding: 100px 200px 100px 200px;
+}
+
+.project-detail-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.project-detail-technologies {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* Image List */
+.image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.image-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-icon {
+    width: 35px; 
+    height: 35px; 
+    margin-right: 20px; 
+    vertical-align: middle;
+    position: relative;
+    top: 2px; 
+}
+
+.list-text {
+    vertical-align: middle;
 }
