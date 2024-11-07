@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './styles/project-details.css';
+import './styles/gallery.css';
 import 'react-vertical-timeline-component/style.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,6 +10,8 @@ import global_en from './locales/en/global.json';
 import global_de from './locales/de/global.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
+import 'lightbox2/dist/css/lightbox.min.css';
+import 'lightbox2/dist/js/lightbox-plus-jquery.min.js';
 
 i18next.init({
   interpolation: {escapeValue: false},

@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import UnityLogo from '../assets/company_logos/unity.svg';
 import BlenderLogo from '../assets/company_logos/blender.svg';
 import SteamLogo from '../assets/company_logos/steamvr-branding.svg';
-import { ReactComponent as GitHubLogo } from '../assets/company_logos/steamvr-branding.svg';
+import ImageGallery from './ImageGallery';
+import VideoGallery from './VideoGallery';
 
 const ProjectDetailsView = ({isMobile}) => {
   const [t] = useTranslation("global");
@@ -29,6 +30,7 @@ const ProjectDetailsView = ({isMobile}) => {
             <Typography className='banner-title' variant='h3' style={{ textTransform: 'uppercase' , fontWeight: 'bold'}}>VR Medical Eye Simulation</Typography>
         </div>
 
+        <div className='project-detail-info'>
         <div className='project-detail-info-contianer'>
             <div className='project-detail-overview'>
                 <Typography variant='h5'
@@ -42,14 +44,8 @@ const ProjectDetailsView = ({isMobile}) => {
                 >
                     Overview
                 </Typography>
-                <Typography variant='text'>
-                Prototype application that simulates different eye conditions in VR.
-
-This application was apart of a freelance project in which I worked alongside an eye surgeon who wanted to prototype the use of VR to demonstrate different eye conditions. The project consists of a management section in which custom lens effects can be created. Different lenses can be loaded in the experience section in which a lens preset(s) and an environment are selected to view in VR. The different lenses can be toggled in VR to see the different effects.
-
-The project was completed in approximately four months
+                <Typography variant='text'>Prototype application that simulates different eye conditions in VR. This application was apart of a freelance project in which I worked alongside an eye surgeon who wanted to prototype the use of VR to demonstrate different eye conditions. The project consists of a management section in which custom lens effects can be created. Different lenses can be loaded in the experience section in which a lens preset(s) and an environment are selected to view in VR. The different lenses can be toggled in VR to see the different effects. The project was completed in approximately four months
                 </Typography>
-                {/* <Button sx={{maxWidth: '500px', color:'black'}} startIcon={<GitHubLogo style={{height: '40px'}}/>}>View Source Code</Button> */}
             </div>
             <div className='project-detail-technologies'> 
             <Typography variant='h5'
@@ -73,14 +69,17 @@ The project was completed in approximately four months
                 </ul>
             </div>
         </div>
-        <div className='video-gallery'>
-
+            <div class="image-gallery">
+                <div>
+                    <Typography variant={'h6'}>VIDEOS</Typography>
+                    <VideoGallery/>
+                </div>
+                <div>
+                    <Typography variant={'h6'}>IMAGES</Typography>
+                    <ImageGallery/>
+                </div>
+            </div>       
         </div>
-
-        <div className='image-gallery'>
-
-        </div>
-        
     </div>
   )};
 
