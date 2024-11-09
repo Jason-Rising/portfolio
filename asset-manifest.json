@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c440edfa.css",
-    "main.js": "/portfolio/static/js/main.b9e71061.js",
+    "main.css": "/portfolio/static/css/main.463a30d8.css",
+    "main.js": "/portfolio/static/js/main.9fd55e7c.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/legend-studios.svg": "/portfolio/static/media/legend-studios.801c61e3a149d9c0ac49997d48ffcdd0.svg",
+    "static/media/cave1.jpg": "/portfolio/static/media/cave1.bd664d7ec5eeea094341.jpg",
+    "static/media/landscape1.jpg": "/portfolio/static/media/landscape1.bcb50ad6216857b24041.jpg",
+    "static/media/swamp_2.jpg": "/portfolio/static/media/swamp_2.32826831ee6b47362c32.jpg",
     "static/media/brytenwalda-studios.svg": "/portfolio/static/media/brytenwalda-studios.380e431f834107ce903b8073a252a9e2.svg",
     "static/media/bg.jpg": "/portfolio/static/media/bg.ba4edd2d98175f5814aa.jpg",
     "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
+    "static/media/anxiety_banner.jpg": "/portfolio/static/media/anxiety_banner.efa819243fc0e03a1e53.jpg",
     "static/media/overlay.png": "/portfolio/static/media/overlay.3fba5f6975280db3a12b.png",
     "static/media/profile.jpg": "/portfolio/static/media/profile.b0f7dd8d2af82eebe36b.jpg",
     "static/media/blender.svg": "/portfolio/static/media/blender.35840337759367f32b7b3001e3c0063a.svg",
@@ -25,12 +30,12 @@
     "static/media/down-arrow-outline.svg": "/portfolio/static/media/down-arrow-outline.79af318cc55bee4f3ab90db36f1b6982.svg",
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
-    "main.c440edfa.css.map": "/portfolio/static/css/main.c440edfa.css.map",
-    "main.b9e71061.js.map": "/portfolio/static/js/main.b9e71061.js.map",
+    "main.463a30d8.css.map": "/portfolio/static/css/main.463a30d8.css.map",
+    "main.9fd55e7c.js.map": "/portfolio/static/js/main.9fd55e7c.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c440edfa.css",
-    "static/js/main.b9e71061.js"
+    "static/css/main.463a30d8.css",
+    "static/js/main.9fd55e7c.js"
   ]
 }
