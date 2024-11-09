@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.c440edfa.css",
+    "main.js": "/portfolio/static/js/main.a8d0603b.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/legend-studios.svg": "/portfolio/static/media/legend-studios.801c61e3a149d9c0ac49997d48ffcdd0.svg",
+    "static/media/brytenwalda-studios.svg": "/portfolio/static/media/brytenwalda-studios.380e431f834107ce903b8073a252a9e2.svg",
+    "static/media/bg.jpg": "/portfolio/static/media/bg.ba4edd2d98175f5814aa.jpg",
+    "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
+    "static/media/overlay.png": "/portfolio/static/media/overlay.3fba5f6975280db3a12b.png",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.b0f7dd8d2af82eebe36b.jpg",
+    "static/media/blender.svg": "/portfolio/static/media/blender.35840337759367f32b7b3001e3c0063a.svg",
+    "static/media/xero.svg": "/portfolio/static/media/xero.de3b9572e3bf48d6b6f95e28c09ab7cd.svg",
+    "static/media/globe.svg": "/portfolio/static/media/globe.bbb8ec43b34340ca1ed4c5f5fe9123bc.svg",
+    "static/media/unity.svg": "/portfolio/static/media/unity.86fd144bcc890fe1cd7e52a48862ca9d.svg",
+    "static/media/au.svg": "/portfolio/static/media/au.f6d256387d188d1994271d291b883ffc.svg",
+    "static/media/steamvr-branding.svg": "/portfolio/static/media/steamvr-branding.cb3754dfe87cb88593953df2d673871e.svg",
+    "static/media/graduate-cap.svg": "/portfolio/static/media/graduate-cap.f0241685f70b11bd27cd29fee1f5514e.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.6d76acb3fd7138ea3dbdbee4749c35b4.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.d4577cfbb9306cfe891b2ac5c1586b8c.svg",
+    "static/media/location.svg": "/portfolio/static/media/location.84178561d6d92769f1c228ffb3693abb.svg",
+    "static/media/arrow-left.svg": "/portfolio/static/media/arrow-left.ec5a9a93a2f9174b74a745a8ff1b3dac.svg",
+    "static/media/youtube.svg": "/portfolio/static/media/youtube.f0be3e6140d01f243a7b0637bcc3ba67.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/work.svg": "/portfolio/static/media/work.6413c09bf78ca98f1fe80632e1f3e3ab.svg",
+    "static/media/down-arrow-outline.svg": "/portfolio/static/media/down-arrow-outline.79af318cc55bee4f3ab90db36f1b6982.svg",
+    "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
+    "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
+    "main.c440edfa.css.map": "/portfolio/static/css/main.c440edfa.css.map",
+    "main.a8d0603b.js.map": "/portfolio/static/js/main.a8d0603b.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c440edfa.css",
+    "static/js/main.a8d0603b.js"
+  ]
+}
