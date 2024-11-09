@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c440edfa.css",
-    "main.js": "/portfolio/static/js/main.281e1126.js",
+    "main.js": "/portfolio/static/js/main.295e7e58.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/legend-studios.svg": "/portfolio/static/media/legend-studios.801c61e3a149d9c0ac49997d48ffcdd0.svg",
     "static/media/brytenwalda-studios.svg": "/portfolio/static/media/brytenwalda-studios.380e431f834107ce903b8073a252a9e2.svg",
     "static/media/bg.jpg": "/portfolio/static/media/bg.ba4edd2d98175f5814aa.jpg",
     "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
@@ -27,11 +26,11 @@
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
     "main.c440edfa.css.map": "/portfolio/static/css/main.c440edfa.css.map",
-    "main.281e1126.js.map": "/portfolio/static/js/main.281e1126.js.map",
+    "main.295e7e58.js.map": "/portfolio/static/js/main.295e7e58.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c440edfa.css",
-    "static/js/main.281e1126.js"
+    "static/js/main.295e7e58.js"
   ]
 }
