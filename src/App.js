@@ -19,12 +19,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className='container'>
           <Banner onDownArrowClick={scrollToDiv} isMobile={isMobile} />
-          
-          <div className='main'></div>
-
           <div className="main" ref={targetDivRef}>
             <Routes>
               <Route path='/' element={
