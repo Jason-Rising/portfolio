@@ -8,6 +8,7 @@ import BlenderLogo from '../assets/company_logos/blender.svg';
 import SteamLogo from '../assets/company_logos/steamvr-branding.svg';
 import ImageGallery from './ImageGallery';
 import VideoGallery from './VideoGallery';
+import ProjectDetailsBanner from './ProjectDetailsBanner';
 
 const ProjectDetailsView = ({isMobile}) => {
   const [t] = useTranslation("global");
@@ -16,20 +17,7 @@ const ProjectDetailsView = ({isMobile}) => {
 
   return (
     <div className="project-detail-view">
-        <div className='project-detail-banner' onClick={()=> navigate("/")}>
-            <div className='banner-return'>
-                <ReturnArrow/>
-                <Typography
-                    className='banner-return-text' 
-                    variant='h6'
-                    style={{ textTransform: 'uppercase'}} 
-                >
-                    Return to Projects
-                </Typography>
-            </div>
-            <Typography className='banner-title' variant='h3' style={{ textTransform: 'uppercase' , fontWeight: 'bold'}}>VR Medical Eye Simulation</Typography>
-        </div>
-
+        <ProjectDetailsBanner/>
         <div className='project-detail-info'>
         <div className='project-detail-info-contianer'>
             <div className='project-detail-overview'>
