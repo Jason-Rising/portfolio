@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.463a30d8.css",
-    "main.js": "/portfolio/static/js/main.9fd55e7c.js",
+    "main.css": "/portfolio/static/css/main.7835de47.css",
+    "main.js": "/portfolio/static/js/main.058e1319.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/legend-studios.svg": "/portfolio/static/media/legend-studios.801c61e3a149d9c0ac49997d48ffcdd0.svg",
     "static/media/cave1.jpg": "/portfolio/static/media/cave1.bd664d7ec5eeea094341.jpg",
@@ -30,12 +30,12 @@
     "static/media/down-arrow-outline.svg": "/portfolio/static/media/down-arrow-outline.79af318cc55bee4f3ab90db36f1b6982.svg",
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
-    "main.463a30d8.css.map": "/portfolio/static/css/main.463a30d8.css.map",
-    "main.9fd55e7c.js.map": "/portfolio/static/js/main.9fd55e7c.js.map",
+    "main.7835de47.css.map": "/portfolio/static/css/main.7835de47.css.map",
+    "main.058e1319.js.map": "/portfolio/static/js/main.058e1319.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.463a30d8.css",
-    "static/js/main.9fd55e7c.js"
+    "static/css/main.7835de47.css",
+    "static/js/main.058e1319.js"
   ]
 }
