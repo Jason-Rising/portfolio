@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, Typography } from '@mui/material';
-import { ReactComponent as ReturnArrow } from '../assets/icons/arrow-left.svg';
+import { Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import UnityLogo from '../assets/company_logos/unity.svg';
 import BlenderLogo from '../assets/company_logos/blender.svg';
@@ -9,6 +8,12 @@ import SteamLogo from '../assets/company_logos/steamvr-branding.svg';
 import ImageGallery from './ImageGallery';
 import VideoGallery from './VideoGallery';
 import ProjectDetailsBanner from './ProjectDetailsBanner';
+
+import ProfilePic from '../assets/images/profile.jpg';
+import Cave from '../assets/images/projects/beyond_mankind/cave1.jpg';
+import Mountain from '../assets/images/projects/beyond_mankind/landscape1.jpg';
+import Anxierty from '../assets/images/projects/anxiety_revelation_of_mind/anxiety_banner.jpg';
+import Dragon from '../assets/images/projects/dragon_forge/swamp_2.jpg';
 
 const ProjectDetailsView = ({isMobile}) => {
   const [t] = useTranslation("global");
@@ -27,7 +32,7 @@ const ProjectDetailsView = ({isMobile}) => {
                     textDecoration: 'underline',
                     textDecorationThickness: '5px', 
                     textUnderlineOffset: '15px', 
-                    textDecorationColor: '#000000', 
+                    textDecorationColor: '#000000',
                   }}
                 >
                     Overview
@@ -57,14 +62,23 @@ const ProjectDetailsView = ({isMobile}) => {
                 </ul>
             </div>
         </div>
-            <div class="image-gallery">
+            <div className="gallery-container">
                 <div>
                     <Typography variant={'h6'}>VIDEOS</Typography>
-                    <VideoGallery/>
+                    <VideoGallery videos={[
+                        { src: 'https://www.youtube.com/embed/OoUvYfuNVuo?si=JEU5yojGdc54kM8M', title: 'Video 1' },
+                        { src: 'https://www.youtube.com/embed/OoUvYfuNVuo?si=JEU5yojGdc54kM8M', title: 'Video 2' }
+                        ]} />
                 </div>
                 <div>
                     <Typography variant={'h6'}>IMAGES</Typography>
-                    <ImageGallery/>
+                    <ImageGallery images={[
+                        { src: ProfilePic, alt: 'Kitten 1' },
+                        { src: Cave, alt: 'Kitten 1' },
+                        { src: Dragon, alt: 'Kitten 1' },
+                        { src: Anxierty, alt: 'Kitten 1' },
+                        { src: Mountain, alt: 'Kitten 1' },
+                    ]}/>
                 </div>
             </div>       
         </div>

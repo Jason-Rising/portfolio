@@ -139,8 +139,8 @@
     vertical-align: middle;
 }
 
-/* Image Gallery */
-.image-gallery {
+/* Image & Video Gallery */
+.gallery-container {
     display: flex;
     flex-direction: column;
     gap: 80px;
