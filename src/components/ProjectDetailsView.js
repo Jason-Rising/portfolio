@@ -14,6 +14,7 @@ import Cave from '../assets/images/projects/beyond_mankind/cave1.jpg';
 import Mountain from '../assets/images/projects/beyond_mankind/landscape1.jpg';
 import Anxierty from '../assets/images/projects/anxiety_revelation_of_mind/anxiety_banner.jpg';
 import Dragon from '../assets/images/projects/dragon_forge/swamp_2.jpg';
+import TechnologyList from './TechnologyList';
 
 const ProjectDetailsView = ({isMobile}) => {
   const [t] = useTranslation("global");
@@ -22,7 +23,8 @@ const ProjectDetailsView = ({isMobile}) => {
 
   return (
     <div className="project-detail-view">
-        <ProjectDetailsBanner/>
+        <ProjectDetailsBanner isMobile={isMobile} title={'VR Medical Eye Simulation'}/>
+        
         <div className='project-detail-info'>
         <div className='project-detail-info-contianer'>
             <div className='project-detail-overview'>
@@ -45,21 +47,12 @@ const ProjectDetailsView = ({isMobile}) => {
                 style={{ textTransform: 'uppercase' }}
                 >
                     Technologies
-                </Typography>                
-                <ul className="image-list">
-                    <li>
-                        <img src={UnityLogo} className="list-icon"/>
-                        <Typography variant='text' className="list-text">Unity</Typography>
-                    </li>
-                    <li>
-                        <img src={BlenderLogo} className="list-icon"/>
-                        <Typography variant='text' className="list-text">Blender</Typography>
-                    </li>
-                    <li>
-                        <img src={SteamLogo} className="list-icon"/>
-                        <Typography variant='text' className="list-text">SteamVR</Typography>
-                    </li>
-                </ul>
+                </Typography>              
+                <TechnologyList items={[
+                    {image: UnityLogo, text: 'Unity'},
+                    {image: BlenderLogo, text: 'Blender'},
+                    {image: SteamLogo, text: 'SteamVR'}
+                ]}/>  
             </div>
         </div>
             <div className="gallery-container">
@@ -72,7 +65,7 @@ const ProjectDetailsView = ({isMobile}) => {
                 </div>
                 <div>
                     <Typography variant={'h6'}>IMAGES</Typography>
-                    <ImageGallery images={[
+                    <ImageGallery isMobile={isMobile} images={[
                         { src: ProfilePic, alt: 'Kitten 1' },
                         { src: Cave, alt: 'Kitten 1' },
                         { src: Dragon, alt: 'Kitten 1' },

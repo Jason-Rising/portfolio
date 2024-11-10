@@ -1,13 +1,13 @@
 import { ImageList, ImageListItem } from '@mui/material';
 import React from 'react';
 
-const Gallery = ({images}) => { 
+const Gallery = ({isMobile, images}) => { 
     return (
       <div className="gallery">
           <ImageList
           variant='masonry' 
           sx={{width: '100%'}} 
-          cols={3}
+          cols={isMobile ? 1 : 3}
           gap={'1vw'}>
         {images.map((image, index) => (
 
