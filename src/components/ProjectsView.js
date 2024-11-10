@@ -15,6 +15,15 @@ const ProjectsView = ({ activeView, setActiveView }) => {
                 <Grid2>
                 <Widget img={profile} onClick={() => setActiveView("project-popup")} />
                 </Grid2>
+                <Grid2>
+                <Widget img={profile} onClick={() => setActiveView("project-popup")} />
+                </Grid2>
+                <Grid2>
+                <Widget img={profile} onClick={() => setActiveView("project-popup")} />
+                </Grid2>
+                <Grid2>
+                <Widget img={profile} onClick={() => setActiveView("project-popup")} />
+                </Grid2>
             </Grid2>
             </div>
         </CSSTransition>
