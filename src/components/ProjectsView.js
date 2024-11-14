@@ -5,11 +5,17 @@ import { Grid2 } from '@mui/material';
 import Widget from './Widget';
 import { useNavigate } from "react-router-dom";
 
-const ProjectsView = ({ activeView, setActiveView }) => {
+const ProjectsView = ({ activeView, setActiveView, scrollToProjectView }) => {
     const navigate = useNavigate(); 
     
     return (
-        <CSSTransition in={activeView === 'main'} unmountOnExit timeout={300} classNames='project-view' onExited={() => {navigate('/hello'); setActiveView('main')}}>
+        <CSSTransition in={activeView === 'main'} unmountOnExit timeout={300} classNames='project-view' onExited={
+                () => {
+                    navigate('/hello'); 
+                    setActiveView('main'); 
+                    scrollToProjectView();
+                }
+            }>
             <div className='project-view'>
             <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='fade-in-right'>
                 <Grid2>

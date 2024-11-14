@@ -1,10 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { createTheme, responsiveFontSizes, ThemeProvider, useMediaQuery } from "@mui/material";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
 import TimelineView from './components/TimelineView';
 import ProjectsView from './components/ProjectsView';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectDetailsView from './components/ProjectDetailsView';
 
 function App() {
@@ -15,13 +15,29 @@ function App() {
   const theme = responsiveFontSizes(createTheme());
   const isMobile = useMediaQuery('(max-width:980px)');
 
-  const scrollToDiv = () => targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToDivSmooth = () => targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+
+  const scrollToDiv = () => { if (!isVisible) targetDivRef.current.scrollIntoView(); }
+
+  // Check is banner is visible  
+  const [isVisible, setIsVisible] = useState(false);
+  const bannerRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setIsVisible(entry.isIntersecting);
+    })
+    observer.observe(bannerRef.current);
+  }, []);
+
 
   return (
     <ThemeProvider theme={theme}>
       <Router basename={process.env.PUBLIC_URL}>
         <div className='container'>
-          <Banner onDownArrowClick={scrollToDiv} isMobile={isMobile} />
+          <div ref={bannerRef}>
+          <Banner onDownArrowClick={scrollToDivSmooth} isMobile={isMobile} />
+          </div>
           <div className="main" ref={targetDivRef}>
             <Routes>
               <Route path='/' element={
@@ -29,7 +45,7 @@ function App() {
                   <Navbar activeView={activeView} showProjects={showProjects} setShowProjects={setShowProjects} />
 
                   {showProjects ? (
-                    <ProjectsView activeView={activeView} setActiveView={setActiveView} />
+                    <ProjectsView activeView={activeView} setActiveView={setActiveView} scrollToProjectView={scrollToDiv}/>
                   ) : (
                     <TimelineView isMobile={isMobile} />
                   )}
