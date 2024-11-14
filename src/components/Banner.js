@@ -14,16 +14,13 @@ const Banner = ({ onDownArrowClick, isMobile }) => {
       <div className="banner-locale">
         <LocaleSelect />
       </div>
+      <div className='banner-info'>
       <div className="line-break" />
       <img className="profile" src={profile} alt="Profile" />
       <Typography variant="h3">Jason Rising</Typography>
       <Typography sx={{ opacity: '80%' }} variant="h6">{t("home.job_title")}</Typography>
-      <SocialIcons />
-      {isMobile && (
-        <div className="banner-downarrow-mobile" onClick={onDownArrowClick}>
-          <DownArrowIcon />
-        </div>
-      )}
+      <SocialIcons isMobile={isMobile} onDownClick={onDownArrowClick} />
+      </div>
     </section>
   )};
 

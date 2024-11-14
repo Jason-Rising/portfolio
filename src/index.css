@@ -159,17 +159,17 @@ code {
   }
 
   .banner-downarrow-mobile {
-    justify-content: center;
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
   }
 
-  .banner-downarrow-mobile * {
-    height: 50px;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 0;
-    left: 43.2%; 
-    margin-bottom: 50px;
-    
+  .banner-downarrow-mobile svg {
+    height: 100%;
+    opacity: 0.7;   
   }
 }
 
@@ -185,7 +185,31 @@ code {
   .banner .icons {
     justify-content: left;
   }
+
+  .banner-downarrow-mobile   {
+    left: initial;
+    right: 0;
+    padding: 20px;
+  }
 }
+
+@media screen and (max-height: 390px) {
+
+  .banner {
+    padding: 2%;
+  }
+  .banner .banner-info {
+    scale: 90%;
+  }
+
+  .banner-downarrow-mobile   {
+    padding: 0;
+    left: initial;
+    right: 0;
+    transform: translateY(50%);
+  }
+}
+
 
 
 .banner .profile {
