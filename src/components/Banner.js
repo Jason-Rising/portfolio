@@ -19,8 +19,13 @@ const Banner = ({ onDownArrowClick, isMobile }) => {
       <img className="profile" src={profile} alt="Profile" />
       <Typography variant="h3">Jason Rising</Typography>
       <Typography sx={{ opacity: '80%' }} variant="h6">{t("home.job_title")}</Typography>
-      <SocialIcons isMobile={isMobile} onDownClick={onDownArrowClick} />
+      <SocialIcons />
       </div>
+      {isMobile && (
+        <div className="banner-downarrow-mobile" onClick={onDownArrowClick}>
+          <DownArrowIcon />
+        </div>
+      )}
     </section>
   )};
 
