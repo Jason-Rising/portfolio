@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { CSSTransition } from "react-transition-group";
-import profile from '../assets/images/profile.jpg';
 import { Grid2 } from '@mui/material';
 import Widget from './Widget';
 import { useNavigate } from "react-router-dom";
@@ -24,7 +23,7 @@ const ProjectsView = ({ activeView, setActiveView, scrollToProjectView }) => {
             <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='fade-in-right'>
                 {ProjectDetailsDTO(t).map((details) => (
                 <Grid2>
-                    <Widget img={profile} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
+                    <Widget img={details.widgetImg} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
                 </Grid2>
                 ))}
             </Grid2>

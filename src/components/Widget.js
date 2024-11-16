@@ -12,10 +12,10 @@ function Widget(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              VR Meddical Eye Simulation
+              Anxiety : Revelation of Mind
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Freelance project for VR simulation for different eye conditions.
+            Horror Survivial set during WWI. With object based physic puzzles
             </Typography>
           </CardContent>
         </CardActionArea>

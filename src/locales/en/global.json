@@ -2,12 +2,5 @@
     "home": {
         "title": "Welcome to my Portfolio",
         "job_title": "Software Engineer"
-    },
-    "project_details_main": {
-        "overview": "Overview",
-        "technologies": "Technologies",
-        "videos": "Videos",
-        "images": "Images",
-        "return_to_projects": "Return to Projects"
     }
 }

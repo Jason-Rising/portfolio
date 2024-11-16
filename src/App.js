@@ -10,7 +10,7 @@ import { ProjectDetailsDTO } from './components/data/ProjectDetailsData';
 import { useTranslation } from 'react-i18next';
 
 function App() {
-  const [t] = useTranslation("global");
+  const [t] = useTranslation("projects");
   const [showProjects, setShowProjects] = useState(true);
   const [activeView, setActiveView] = useState("main");
   const targetDivRef = useRef(null);

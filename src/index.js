@@ -7,7 +7,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import global_en from './locales/en/global.json';
+import projects_en from './locales/en/projects.json';
 import global_de from './locales/de/global.json';
+import projects_de from './locales/de/projects.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import 'lightbox2/dist/css/lightbox.min.css';
@@ -18,10 +20,12 @@ i18next.init({
   lng: "en",
   resources: {
     en: {
-      global: global_en
+      global: global_en,
+      projects: projects_en
     },
     de: {
-      global: global_de
+      global: global_de,
+      projects: projects_de
     }
   }
 })
