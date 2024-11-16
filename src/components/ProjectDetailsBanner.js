@@ -24,7 +24,7 @@ const ProjectDetailsBanner = (props) => {
                         variant='h6'
                         style={{ textTransform: 'uppercase'}}
                     >
-                        Return to Projects
+                        {t("project_details_main.return_to_projects")}
                     </Typography>
                 </div>
                 <Typography className='banner-title' variant='h3' style={{ textTransform: 'uppercase' , fontWeight: 'bold'}}>{props.title}</Typography>

@@ -6,8 +6,11 @@ import TimelineView from './components/TimelineView';
 import ProjectsView from './components/ProjectsView';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectDetailsView from './components/ProjectDetailsView';
+import { ProjectDetailsDTO } from './components/data/ProjectDetailsData';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const [t] = useTranslation("global");
   const [showProjects, setShowProjects] = useState(true);
   const [activeView, setActiveView] = useState("main");
   const targetDivRef = useRef(null);
@@ -51,9 +54,11 @@ function App() {
                   )}
               </div>
               }/>
-              <Route path="/hello" element={
-                <ProjectDetailsView isMobile={isMobile} />
+              {ProjectDetailsDTO(t).map((details) => (
+              <Route path={details.route} element={
+                <ProjectDetailsView isMobile={isMobile} projectDetails={details} />
               } />
+              ))}
             </Routes>
           </div>
         </div>
