@@ -14,6 +14,7 @@ const ProjectDetailsBanner = (props) => {
     const bannerImageStyle = {
         opacity: isLoaded ? props.bannerOpacity : 0, 
         transition: 'opacity 0.1s ease-in-out', 
+        transform: `translateY(${props.translateY})`,
     }
 
     return (
@@ -31,6 +32,7 @@ const ProjectDetailsBanner = (props) => {
                     style={bannerImageStyle}
                     onLoad={() => setIsLoaded(true)}
                 />
+                
                 <div className='banner-return'>
                     <ReturnArrow/>
                     <Typography

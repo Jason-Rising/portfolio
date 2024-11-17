@@ -35,7 +35,9 @@
 .project-banner-img {
     width: 100%;
     opacity: 0.8;
+    min-width: 1000px;
 }
+
 .project-detail-banner:hover .banner-return-text {
     opacity: 1;
     transition: opacity 0.3s ease; 

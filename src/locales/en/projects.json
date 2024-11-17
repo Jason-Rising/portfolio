@@ -9,7 +9,46 @@
     
     "anxiety-revelation-of-mind": {
         "title": "Anxiety : Revelation of Mind",
+        "widget-description": "First person survivial horror game",
         "overview": "Anxiety: Revelation of Mind is a survival horror game set during World War I. This project marked my first venture into both game development and programming. Developing this game was an incredibly rewarding experience and played a pivotal role in inspiring me to pursue a career in software development after high school.\n\nThe game was built using the Unity engine and took over a year (2015–2016) to complete. Throughout the development process, I gained valuable insights into .NET architecture and object-oriented design patterns. Additionally, I worked on key game development components, such as character controllers, rigid body physics, state-machine and behaviour tree AI architecture, and file systems for saving mechanics.\n\nThe game was released on Itch.io in 2016, where it achieved moderate success and was featured by several YouTubers.",
         "button-text": "View Game"
+    },
+
+    "beyond-mankind": {
+        "title": "Beyond Mankind",
+        "widget-description": "Freelance Environmental Designer & Developer | Brytenwalda Studios",
+        "overview": "Beyond Mankind is an action RPG inspired by the novel Evil Genes.\nI joined the project in late 2018 as an Environmental Designer. My role involved designing the visual components of various outdoor scenes and programming environmental features, such as dynamic cave lighting systems.\n\nAs a semi-open world game, Beyond Mankind provided a valuable opportunity to deepen my knowledge of software optimisation. I gained hands-on experience in CPU and GPU performance analysis and applied a range of optimisation techniques, including batching, GPU instancing, occlusion culling, and frustum culling.\n\nThe team was distributed across multiple countries and time zones, making asynchronous communication essential. We utilised tools like Discord and GitHub to coordinate effectively. Since many team members worked remotely, we maintained clear profiles with our working hours to help schedule meetings that respected everyone’s time zones.",
+        "button-website": "Brytenwalda Studios Website",
+        "button-steam": "View Steam Page"
+    },
+
+    "dragon-forge": {
+        "title": "Dragon Forge",
+        "widget-description": "Freelance Environmental Designer & Developer | Legendd Studios",
+        "overview": "Dragon Forge is an incremental base-building adventure game in which you take control of a legendary dragon attempting to rid the growing corruption shrouding the continent.\n\nI joined the project in October 2019 as the primary Environment Designer and Artist. My role encompassed the development of all visual aspects of the game, optimising game performance, and implementing environment-based systems such as dynamic lighting, animations, and event-driven environmental effects.\n\nLegend Studios, a small indie company based in the US, operated with a compact team. As the sole remote developer, most of my work was completed asynchronously. We used Discord for communication and conducted regular stand-up-style meetings to discuss progress, address blockers, and align on tasks. For source control, we adopted a trunk-based development approach using GitHub.",
+        "button-website": "Legend Studios Website",
+        "button-steam": "View Steam Page"
+    },
+
+    "youtube": {
+        "title": "YouTube Tutorials",
+        "widget-description": "Computing tutorials with focus on game developments",
+        "overview": "Teaching has always been an incredibly rewarding experience for me. It’s not just about the excitement of watching others develop their skills and deepen their understanding—it’s also an opportunity to reinforce and refine my own knowledge.\n\nWith this passion in mind, I launched a YouTube channel called Sketch, where I create and share game development content focused on the Unity engine. The channel serves as a platform for education, offering tutorials, tips, and insights for aspiring developers.",
+        "button-channel": "View Channel"
+    },
+
+    "sorting-visualiser": {
+        "title": "Sorting Visualiser",
+        "widget-description": "Visualisation of common sorting algorithms",
+        "overview": "The Sorting Algorithm Visualiser was a project I undertook to solidify my understanding of various sorting algorithms covered during my university course. At the same time, it provided an excellent opportunity to explore web development and delve into the React framework.\n\nThis application not only visualises popular sorting algorithms but also offers detailed information about each one, including their time and space complexities. Additionally, it provides insights into the contexts where specific algorithms are most effective, helping users understand when and why to choose a particular approach.",
+        "button-view-app": "View App Demo",
+        "button-view-source-code": "View Source Code"
+    },
+
+    "vr-lenses": {
+        "title": "VR Medical Eye Conditions Simulator",
+        "widget-description": "VR simulation for different eye conditions",
+        "overview": "Lenses VR is a virtual reality application designed to simulate various medical eye conditions. This project was part of a freelance collaboration with Dr David Gunn, an Ophthalmologist based in Brisbane, Australia, who sought to leverage VR technology to demonstrate different eye conditions.\n\nThe application includes a management section where users can configure custom lens effects. These lens presets can be loaded into the experience section, allowing users to select both a lens and an environment to view in VR. Within the VR experience, users can toggle between different lenses to observe how each effect replicates specific eye conditions.\n\nAs the sole developer, I managed both the application development and client interaction. Communication was primarily conducted via email, starting with early discussions to define the project’s vision, goals, and timeline. Throughout the development process, I adopted an agile approach, regularly providing builds for Dr Gunn’s review and provide feedback.\n\nThe project was successfully completed within approximately four months, meeting all functional requirements and exceeding the client’s expectations.",
+        "button-view-app": "View Application"
     }
-}
+}   

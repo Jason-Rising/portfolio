@@ -11,7 +11,7 @@ const ProjectDetailsView = ({isMobile, projectDetails}) => {
 
   return (
     <div className="project-detail-view">
-        <ProjectDetailsBanner isMobile={isMobile} title={projectDetails.title} bannerImag={projectDetails.banner} bannerOpacity={projectDetails.bannerOpacity}/>
+        <ProjectDetailsBanner isMobile={isMobile} title={projectDetails.title} bannerImag={projectDetails.banner} bannerOpacity={projectDetails.bannerOpacity} translateY={projectDetails.bannerTranslateY}/>
         
         <div className='project-detail-info'>
         <div className='project-detail-info-contianer'>
@@ -43,6 +43,7 @@ const ProjectDetailsView = ({isMobile, projectDetails}) => {
                     ))}
                 </div>
             </div>
+            {projectDetails.technologies ?
             <div className='project-detail-technologies'> 
             <Typography variant='h5'
                 style={{ textTransform: 'uppercase' }}
@@ -51,16 +52,20 @@ const ProjectDetailsView = ({isMobile, projectDetails}) => {
                 </Typography>              
                 <TechnologyList items={projectDetails.technologies}/>  
             </div>
+            : <></>}
         </div>
             <div className="gallery-container">
+                {projectDetails.videos ? 
                 <div>
                     <Typography variant={'h6'} style={{ textTransform: 'uppercase'}}>{t("project.videos")}</Typography>
                     <VideoGallery videos={projectDetails.videos} />
-                </div>
+                </div> : <></>}
+                {projectDetails.images ? 
                 <div>
                     <Typography variant={'h6'} style={{ textTransform: 'uppercase' }}>{t("project.images")}</Typography>
                     <ImageGallery isMobile={isMobile} images={projectDetails.images}/>
                 </div>
+                : <></>}
             </div>       
         </div>
     </div>

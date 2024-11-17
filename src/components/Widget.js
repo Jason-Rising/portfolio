@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 
 function Widget(props) {
     return (
@@ -12,10 +12,10 @@ function Widget(props) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Anxiety : Revelation of Mind
+              {props.title}
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            Horror Survivial set during WWI. With object based physic puzzles
+              {props.description}
             </Typography>
           </CardContent>
         </CardActionArea>

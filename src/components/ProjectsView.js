@@ -7,7 +7,7 @@ import { ProjectDetailsDTO } from './data/ProjectDetailsData';
 import { useTranslation } from 'react-i18next';
 
 const ProjectsView = ({ activeView, setActiveView, scrollToProjectView }) => {
-    const [t] = useTranslation("global");
+    const [t] = useTranslation("projects");
     const navigate = useNavigate(); 
     const [projectRoute, setProjectRoute] = useState('/dev');
 
@@ -23,7 +23,7 @@ const ProjectsView = ({ activeView, setActiveView, scrollToProjectView }) => {
             <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='fade-in-right'>
                 {ProjectDetailsDTO(t).map((details) => (
                 <Grid2>
-                    <Widget img={details.widgetImg} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
+                    <Widget img={details.widget.image} title={details.widget.title} description={details.widget.description} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
                 </Grid2>
                 ))}
             </Grid2>
