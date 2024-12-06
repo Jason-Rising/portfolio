@@ -50,5 +50,12 @@
         "widget-description": "VR simulation for different eye conditions",
         "overview": "Lenses VR is a virtual reality application designed to simulate various medical eye conditions. This project was part of a freelance collaboration with Dr David Gunn, an Ophthalmologist based in Brisbane, Australia, who sought to leverage VR technology to demonstrate different eye conditions.\n\nThe application includes a management section where users can configure custom lens effects. These lens presets can be loaded into the experience section, allowing users to select both a lens and an environment to view in VR. Within the VR experience, users can toggle between different lenses to observe how each effect replicates specific eye conditions.\n\nAs the sole developer, I managed both the application development and client interaction. Communication was primarily conducted via email, starting with early discussions to define the project’s vision, goals, and timeline. Throughout the development process, I adopted an agile approach, regularly providing builds for Dr Gunn’s review and provide feedback.\n\nThe project was successfully completed within approximately four months, meeting all functional requirements and exceeding the client’s expectations.",
         "button-view-app": "View Application"
+    },
+
+    "portfolio-project": {
+        "title": "This Portfolio",
+        "widget-description": "This portfolio was created using React JS",
+        "overview": "This portfolio was built from the ground up using the React JS framework. Key features of the site include localisation, project views, and a career timeline.",
+        "button-view-source-code": "View Source Code"
     }
 }   

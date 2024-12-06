@@ -8,8 +8,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import global_en from './locales/en/global.json';
 import projects_en from './locales/en/projects.json';
+import timeline_en from './locales/en/timeline.json';
 import global_de from './locales/de/global.json';
 import projects_de from './locales/de/projects.json';
+import timeline_de from './locales/de/timeline.json';
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import 'lightbox2/dist/css/lightbox.min.css';
@@ -21,11 +23,13 @@ i18next.init({
   resources: {
     en: {
       global: global_en,
-      projects: projects_en
+      projects: projects_en,
+      timeline: timeline_en
     },
     de: {
       global: global_de,
-      projects: projects_de
+      projects: projects_de,
+      timeline: timeline_de
     }
   }
 })

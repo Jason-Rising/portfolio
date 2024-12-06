@@ -41,6 +41,8 @@ import SortingVisualiserWigdet from '../../assets/images/projects/sorting_visual
 import VRLensesWidget from '../../assets/images/projects/vr_lenses/lenes_vr.jpg';
 import VRLensesBanner from '../../assets/images/projects/vr_lenses/banner.png';
 
+// Project: Portfolio
+import PortfolioWidget from '../../assets/images/profile_zoom.png';
 // Technology SVGs
 import UnityLogo from '../../assets/company_logos/unity.svg';
 import BlenderLogo from '../../assets/company_logos/blender.svg';
@@ -53,6 +55,33 @@ import JS from '../../assets/company_logos/js.svg';
 import CSS from '../../assets/company_logos/css.svg';
 
 export const ProjectDetailsDTO = (t) => { return [
+  {    
+    // VR Lenses 
+    route: "/portfolio-project",
+    widget: {
+      image: PortfolioWidget,
+      title: t("portfolio-project.title"),
+      description: t("portfolio-project.widget-description"),
+    },
+    title: t("portfolio-project.title"),
+    banner: VRLensesBanner,
+    bannerTranslateY: '-250px',
+    bannerGradient: true,
+    bannerOpacity: 0.3,
+    overview: t("portfolio-project.overview"),
+    technologies: [
+      { image: React, text: "React" },
+      { image: HTML, text: "HTML" },
+      { image: CSS, text: "CSS" },
+      { image: JS, text: "JS" },
+    ],
+    buttons: [
+      {
+        text: t("portfolio-project.button-view-source-code"),
+        href: 'https://github.com/Jason-Rising/portfolio'
+      },
+    ],
+  },    
   {    
     // VR Lenses 
     route: "/vr-lenses",

@@ -3,13 +3,13 @@ import Xero from "./assets/icons/xero.svg"
 import BrytenwaldaStudios from "./assets/icons/brytenwalda-studios.svg"
 import LegendStudios from './assets/icons/legend-studios.svg';
 
-let timelineElements = [
+export const ProjectTimeLineElements = (t) => { return [
     {
         id: 1,
-        title: "Software Engineer",
-        location: "Xero",
-        description: "Worked as a backend integration engineer, surpporintg various applications. Managed AWS environment and provisioned infrastrucutre. Managed our own testing and deveops pipelines. Including alerting and monitoring.",
-        date: "2022 - Present",
+        title: t("xero.title"),
+        location: t("xero.location"),
+        description: t("xero.description"),
+        date: t("xero.date"),
         icon: <img src={Xero}/>,
         isWork: true,
 
@@ -53,5 +53,4 @@ let timelineElements = [
 
     }
 ];
-
-export default timelineElements;
+}

@@ -2,19 +2,20 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 
 function Widget(props) {
     return (
-        <Card className="widget"  sx={{ maxWidth: 400 }}>
+        <Card className="widget"  sx={{ maxWidth: '350px', minWidth: '335px'}}>
         <CardActionArea onClick={props.onClick}>
           <CardMedia className="widget-img"
             component="img"
             height="200"
             image={props.img}
-            alt="vr medical"
+            alt="todo"
+            sx={{ height: "140" }}
           />
-          <CardContent>
+          <CardContent sx={{minHeight: '95px'}}>
             <Typography gutterBottom variant="h5" component="div">
               {props.title}
             </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            <Typography variant="body2" sx={{ color: 'text.secondary'}}>
               {props.description}
             </Typography>
           </CardContent>
