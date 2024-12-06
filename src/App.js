@@ -20,11 +20,20 @@ function App() {
 
   const scrollToDivSmooth = () => targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
 
-  const scrollToDiv = () => { if (!isVisible) targetDivRef.current.scrollIntoView(); }
+  const scrollToDiv = () => { 
+    if (isMobile){
+      if (!isVisible) targetDivRef.current.scrollIntoView();
+    }else{
+      const scrollableContainer = document.querySelector(".main");
+      scrollableContainer?.scrollTo({ top: 0, behavior: 'auto' });
+    }
+    
+  } 
 
   // Check is banner is visible  
   const [isVisible, setIsVisible] = useState(false);
   const bannerRef = useRef(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
@@ -32,7 +41,6 @@ function App() {
     })
     observer.observe(bannerRef.current);
   }, []);
-
 
   return (
     <ThemeProvider theme={theme}>
