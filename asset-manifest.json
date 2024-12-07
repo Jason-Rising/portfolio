@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.29d06b48.css",
-    "main.js": "/portfolio/static/js/main.7ea8e05f.js",
+    "main.js": "/portfolio/static/js/main.821d63af.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/map.gif": "/portfolio/static/media/map.653377842589d0e79da0.gif",
     "static/media/physics.gif": "/portfolio/static/media/physics.74b90911a28ec7750de3.gif",
@@ -15,6 +15,7 @@
     "static/media/cave2.PNG": "/portfolio/static/media/cave2.ca9071b215d797b3e1a4.PNG",
     "static/media/desolate_room1.jpg": "/portfolio/static/media/desolate_room1.ec74d7236e7ac71e6568.jpg",
     "static/media/inventory_ui.jpg": "/portfolio/static/media/inventory_ui.06d97d48c5e8b4ed0cf9.jpg",
+    "static/media/profile_zoom.png": "/portfolio/static/media/profile_zoom.e3fa2944396b85a5c072.png",
     "static/media/cave1.jpg": "/portfolio/static/media/cave1.bd664d7ec5eeea094341.jpg",
     "static/media/landscape1.jpg": "/portfolio/static/media/landscape1.bcb50ad6216857b24041.jpg",
     "static/media/monastery.jpg": "/portfolio/static/media/monastery.fadc405cd8e99959538e.jpg",
@@ -58,11 +59,11 @@
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
     "main.29d06b48.css.map": "/portfolio/static/css/main.29d06b48.css.map",
-    "main.7ea8e05f.js.map": "/portfolio/static/js/main.7ea8e05f.js.map",
+    "main.821d63af.js.map": "/portfolio/static/js/main.821d63af.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29d06b48.css",
-    "static/js/main.7ea8e05f.js"
+    "static/js/main.821d63af.js"
   ]
 }
