@@ -20,10 +20,12 @@ const ProjectDetailsBanner = (props) => {
     return (
         <div className='project-detail-banner' onClick={()=> navigate("/")}>
                 {props.isMobile ? 
+                <>
                 <div style={{padding: '50px'}}>
                     <ReturnArrow/>
                     <Typography className='banner-title' variant='h3' style={{ textTransform: 'uppercase' , fontWeight: 'bold'}}>{props.title}</Typography>
                 </div>
+                </>
             :
             <>
                 <img className='project-banner-img'

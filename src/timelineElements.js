@@ -16,41 +16,40 @@ export const ProjectTimeLineElements = (t) => { return [
     },
     {
         id: 2,
-        title: "Bachelor of Design - Computing",
-        location: "University of Melbourne - AU",
-        description: "Studied at the University of Melbourne majoring in computer science.",
-        date: "2019 - 2021",
+        title: t("unimelb.title"),
+        location: t("unimelb.location"),
+        description: t("unimelb.description"),
+        date: t("unimelb.date"),
         icon: <img src={UniMelbIcon}/>,
         isWork: false
     },
     {
         id: 3,
-        title: "Software Engineer - Internship",
-        location: "Xero",
-        description: "Rotated with Developer Evangelism team in Xero. Managed Xero SDK, supported company integrations to the Xero marketplace",
-        date: "Nov  2020 - Feb 2021",
+        title: t("xero-internship.title"),
+        location: t("xero-internship.location"),
+        description: t("xero-internship.description"),
+        date: t("xero-internship.date"),
         icon: <img src={Xero}/>,
         isWork: true,
     },
     {
         id: 4,
-        title: "Software Engineer & Environment Artist",
-        location: "Legend Studios",
-        description: "Freelance game dev work for US based company Legend Studios. Developed environment assets and systems.",
-        date: "2020 - 2021",
+        title: t("legendstudios.title"),
+        location: t("legendstudios.location"),
+        description: t("legendstudios.description"),
+        date: t("legendstudios.date"),
         icon: <img src={LegendStudios}/>,
         isWork: true,
 
     },
     {
         id: 5,
-        title: "Software Engineer & Environment Artist",
-        location: "Brytenwalda Studios",
-        description: "Freelance game dev work for Spainsh based company Brytenwalda Studios. Developed environment assets and systems.",
-        date: "2018 - 2019",
+        title: t("brytenwalda.title"),
+        location: t("brytenwalda.location"),
+        description: t("brytenwalda.description"),
+        date: t("brytenwalda.date"),
         icon: <img src={BrytenwaldaStudios}/>,
         isWork: true,
-
     }
 ];
 }

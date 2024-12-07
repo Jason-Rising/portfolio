@@ -57,33 +57,6 @@ import CSS from '../../assets/company_logos/css.svg';
 export const ProjectDetailsDTO = (t) => { return [
   {    
     // VR Lenses 
-    route: "/portfolio-project",
-    widget: {
-      image: PortfolioWidget,
-      title: t("portfolio-project.title"),
-      description: t("portfolio-project.widget-description"),
-    },
-    title: t("portfolio-project.title"),
-    banner: VRLensesBanner,
-    bannerTranslateY: '-250px',
-    bannerGradient: true,
-    bannerOpacity: 0.3,
-    overview: t("portfolio-project.overview"),
-    technologies: [
-      { image: React, text: "React" },
-      { image: HTML, text: "HTML" },
-      { image: CSS, text: "CSS" },
-      { image: JS, text: "JS" },
-    ],
-    buttons: [
-      {
-        text: t("portfolio-project.button-view-source-code"),
-        href: 'https://github.com/Jason-Rising/portfolio'
-      },
-    ],
-  },    
-  {    
-    // VR Lenses 
     route: "/vr-lenses",
     widget: {
       image: VRLensesWidget,
@@ -111,41 +84,7 @@ export const ProjectDetailsDTO = (t) => { return [
       { src: 'https://www.youtube.com/embed/UwTIil3YcgA?si=P5auWLALeB8QzKzu', title: 'Lenses VR - Preset System Showcase'},
       { src: 'https://www.youtube.com/embed/vI3rvDqMJAQ?si=R1-mu1EHW9nGmLYx', title: 'Lenses VR - Early Development'},
     ]
-  },    
-  {    
-    // Sorting Visualiser 
-    route: "/sorting-visualiser",
-    widget: {
-      image: SortingVisualiserWigdet,
-      title: t("sorting-visualiser.title"),
-      description: t("sorting-visualiser.widget-description"),
-    },
-    title: t("sorting-visualiser.title"),
-    banner: SortingVisualiserBanner,
-    bannerTranslateY: '-130px',
-    bannerGradient: true,
-    bannerOpacity: 1,
-    overview: t("sorting-visualiser.overview"),
-    technologies: [
-      { image: React, text: "React" },
-      { image: HTML, text: "HTML" },
-      { image: CSS, text: "CSS" },
-      { image: JS, text: "JavaScript" }
-    ],
-    buttons: [
-      {
-        text: t("sorting-visualiser.button-view-app"),
-        href: 'https://jason-rising.github.io/Sorting-Visualiser/'
-      },
-      {
-        text: t("sorting-visualiser.button-view-source-code"),
-        href: 'https://github.com/Jason-Rising/Sorting-Visualiser'
-      },
-    ],
-    videos: [
-      { src: 'https://www.youtube.com/embed/3nnnnRLn2MY?si=B7Zzq9dSC5RJMlAe', title: 'Sorting Visualiser Showcase'},
-    ]
-  },  
+  },     
   {
     // YoutTube
     route: "/youtube",
@@ -294,5 +233,66 @@ export const ProjectDetailsDTO = (t) => { return [
       { src: AnxietyHallwayGhost, alt: "Hallway Ghost" },
     ],
   },
+  {    
+    // Sorting Visualiser 
+    route: "/sorting-visualiser",
+    widget: {
+      image: SortingVisualiserWigdet,
+      title: t("sorting-visualiser.title"),
+      description: t("sorting-visualiser.widget-description"),
+    },
+    title: t("sorting-visualiser.title"),
+    banner: SortingVisualiserBanner,
+    bannerTranslateY: '-130px',
+    bannerGradient: true,
+    bannerOpacity: 1,
+    overview: t("sorting-visualiser.overview"),
+    technologies: [
+      { image: React, text: "React" },
+      { image: HTML, text: "HTML" },
+      { image: CSS, text: "CSS" },
+      { image: JS, text: "JavaScript" }
+    ],
+    buttons: [
+      {
+        text: t("sorting-visualiser.button-view-app"),
+        href: 'https://jason-rising.github.io/Sorting-Visualiser/'
+      },
+      {
+        text: t("sorting-visualiser.button-view-source-code"),
+        href: 'https://github.com/Jason-Rising/Sorting-Visualiser'
+      },
+    ],
+    videos: [
+      { src: 'https://www.youtube.com/embed/3nnnnRLn2MY?si=B7Zzq9dSC5RJMlAe', title: 'Sorting Visualiser Showcase'},
+    ]
+  },
+  {    
+    // Portfolio 
+    route: "/portfolio-project",
+    widget: {
+      image: PortfolioWidget,
+      title: t("portfolio-project.title"),
+      description: t("portfolio-project.widget-description"),
+    },
+    title: t("portfolio-project.title"),
+    banner: VRLensesBanner,
+    bannerTranslateY: '-250px',
+    bannerGradient: true,
+    bannerOpacity: 0.3,
+    overview: t("portfolio-project.overview"),
+    technologies: [
+      { image: React, text: "React" },
+      { image: HTML, text: "HTML" },
+      { image: CSS, text: "CSS" },
+      { image: JS, text: "JS" },
+    ],
+    buttons: [
+      {
+        text: t("portfolio-project.button-view-source-code"),
+        href: 'https://github.com/Jason-Rising/portfolio'
+      },
+    ],
+  } 
 ]};
   

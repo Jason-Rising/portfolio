@@ -2,7 +2,31 @@
     "xero": {
         "title": "Software Engineer",
         "location": "Xero",
-        "description": "Worked as a backend integration engineer, surpporintg various applications. Managed AWS environment and provisioned infrastrucutre. Managed our own testing and deveops pipelines. Including alerting and monitoring.",
+        "description": "Operated within the integration team, focusing primarily on backend integration with internal and third-party services. Developed strong proficiency in managing AWS environments and provisioning infrastructure, including testing and DevOps pipelines. Demonstrated expertise in implementing reliable alerting and monitoring systems using tools like New Relic and Sumo Logic. Key technologies include C#, Node.js, Kotlin, Terraform, and SQL, with extensive experience in cloud services such as EC2, ECS, SNS, Step Functions, and Lambda.",
         "date": "2022 - Present"
+    },
+    "xero-internship": {
+        "title": "Software Engineer - Internship",
+        "location": "Xero",
+        "description": "Completed a 3-month rotation with the Developer Evangelist team, contributing to the Xero .NET SDK and managing Xero's external marketplace program, which enables other companies to integrate with the Xero platform. Key achievements included developing a sample app to demonstrate the features of the .NET SDK, as well as creating a video and blog post to showcase the newly released Webhook feature.",
+        "date": "Nov 2020 - Feb 2021"
+    },
+    "unimelb": {
+        "title": "Bachelor of Design - Computing",
+        "location": "University of Melbourne",
+        "description": "Studied at the University of Melbourne majoring in Computer Science. Gained a strong foundation in core computer science concepts, with coursework conducted primarily in C and Java. Topics covered included data structures and algorithms, Big O analysis, neural networks, machine learning, networking fundamentals, and more. Elective courses focused on user experience (UX) design and its principles.",
+        "date": "2019 - 2021"
+    },
+    "legendstudios": {
+        "title": "Environment Artist & Software Engineer",
+        "location": "Legend Studios",
+        "description": "Joined the US based company Legend Studios as a freelance game developer, working on Dragon Forge an incremental base-building adventure game. My role focused on the creation of all visual aspects of the game with key responsibilities including: optimising/performance and implementing environment-based systems such as dynamic lighting, animations, and event-driven environmental effects.",
+        "date": "2020 - 2021"
+    },
+    "brytenwalda": {
+        "title": "Environment Artist & Software Engineer",
+        "location": "Brytenwalda Studios",
+        "description": "Joined the Spanish based company Brytenwalda Studios as a freelance game developer, working on Beyond Mankind an action RPG based on the novel Evil Genes. My role focused on the creation of various level environments including visual aspects and level design. Key responsibilities including: optimising/performance and implementing dynamic lighting systems and event-driven environmental effects.",
+        "date": "2018 - 2019"
     }
 }
