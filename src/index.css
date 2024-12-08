@@ -139,8 +139,8 @@ code {
   }
   .banner {
     position: relative;
-    min-height: 100vh;
-    min-height: 100svh;
+    height: 100vh;
+    height: 100svh;
     text-align: center;
     padding: 10%;
     padding-top: 100px;
@@ -278,9 +278,21 @@ code {
 }
 
 .widget {
-  max-width: 350px;
-  min-width: 333px;
+  width: 350px;
 }
+
+@media (max-width: 556px) {
+  .widget-container {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 385px)  {
+  .widget {
+    width: 320px;
+  }
+}
+
 
 .widget img {
    transition: 300ms;
