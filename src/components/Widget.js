@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 
 function Widget(props) {
     return (
-        <Card className="widget"  sx={{ maxWidth: '350px', minWidth: '335px'}}>
+        <Card className="widget"  sx={{ }}>
         <CardActionArea onClick={props.onClick}>
           <CardMedia className="widget-img"
             component="img"

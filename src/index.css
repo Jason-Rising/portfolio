@@ -277,6 +277,11 @@ code {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
+.widget {
+  max-width: 350px;
+  min-width: 333px;
+}
+
 .widget img {
    transition: 300ms;
 }
@@ -359,7 +364,7 @@ code {
 }
 
 .vertical-timeline-element-content {
-  max-width: 60%;
+  max-width: 800px;
 }
 
 .navbar {
