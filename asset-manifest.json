@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1d3118c6.css",
-    "main.js": "/portfolio/static/js/main.31eb6ce8.js",
+    "main.css": "/portfolio/static/css/main.866c359c.css",
+    "main.js": "/portfolio/static/js/main.77475620.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/map.gif": "/portfolio/static/media/map.653377842589d0e79da0.gif",
     "static/media/physics.gif": "/portfolio/static/media/physics.74b90911a28ec7750de3.gif",
@@ -26,6 +26,7 @@
     "static/media/desolate_room2.jpg": "/portfolio/static/media/desolate_room2.19935652e9373ae01473.jpg",
     "static/media/bg.jpg": "/portfolio/static/media/bg.ba4edd2d98175f5814aa.jpg",
     "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
+    "static/media/banner_small.png": "/portfolio/static/media/banner_small.57fdc620ecec4df05c8e.png",
     "static/media/hallway_ghost.jpg": "/portfolio/static/media/hallway_ghost.b36299f8452f0285442d.jpg",
     "static/media/yt_widget.jpg": "/portfolio/static/media/yt_widget.46e2a08e2065843a59d4.jpg",
     "static/media/anxiety_banner.jpg": "/portfolio/static/media/anxiety_banner.efa819243fc0e03a1e53.jpg",
@@ -58,12 +59,12 @@
     "static/media/down-arrow-outline.svg": "/portfolio/static/media/down-arrow-outline.79af318cc55bee4f3ab90db36f1b6982.svg",
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
-    "main.1d3118c6.css.map": "/portfolio/static/css/main.1d3118c6.css.map",
-    "main.31eb6ce8.js.map": "/portfolio/static/js/main.31eb6ce8.js.map",
+    "main.866c359c.css.map": "/portfolio/static/css/main.866c359c.css.map",
+    "main.77475620.js.map": "/portfolio/static/js/main.77475620.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d3118c6.css",
-    "static/js/main.31eb6ce8.js"
+    "static/css/main.866c359c.css",
+    "static/js/main.77475620.js"
   ]
 }
