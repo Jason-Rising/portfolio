@@ -71,11 +71,11 @@ export const ProjectDetailsDTO = (t) => { return [
     },
     bannerTransform: {
       translateY: '-250px',
-      translateYMobile: '0px',
-      translateXMobile: '-350px',
+      translateYMobile: '-280px',
+      translateXMobile: '-0px',
     },
     bannerGradient: true,
-    bannerOpacity: 0.3,
+    bannerOpacity: 0.6,
     overview: t("vr-lenses.overview"),
     technologies: [
       { image: UnityLogo, text: "Unity" },
