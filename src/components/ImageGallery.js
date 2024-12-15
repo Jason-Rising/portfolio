@@ -11,13 +11,15 @@ const Gallery = ({isMobile, images}) => {
           gap={'1vw'}>
         {images.map((image, index) => (
 
-          <ImageListItem className="img-container">
+          // TODO: Address lazy loading for image gallery
+          <ImageListItem className="img-container" style={{backgroundImage: `url(${image.imgS})`}}>
             <a
               key={index}
               href={image.src}
               data-lightbox="my-gallery"
-              data-title={image.alt}>
-              <img src={image.src} alt={image.alt} loading='lazy' />
+              data-title={image.alt}
+            >
+              <img src={image.src} alt={image.alt} loading='lazy' style={{opacity: 1}} />
             </a>
           </ImageListItem>
         ))}

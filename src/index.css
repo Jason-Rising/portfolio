@@ -280,6 +280,23 @@ code {
   width: 350px;
 }
 
+.widget-img {
+  width: 350px;
+  height: 200px;
+}
+
+.MuiCardMedia-img::after {
+  content:'';
+  position: fixed;
+  top:0px;
+  left: 0px;
+  width: 350px;
+  height: 200px;
+  background-color: #ff0000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 556px) {
   .widget-container {
     justify-content: center !important;

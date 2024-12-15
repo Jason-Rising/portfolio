@@ -23,7 +23,7 @@ const ProjectsView = ({ activeView, setActiveView, scrollToProjectView }) => {
             <Grid2 container spacing={{ xs: 2, md: 3, lg: 8 }} className='widget-container fade-in-right'>
                 {ProjectDetailsDTO(t).map((details) => (
                 <Grid2>
-                    <Widget img={details.widget.image} title={details.widget.title} description={details.widget.description} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
+                    <Widget img={details.widget.image} imgS={details.widget.imageS} title={details.widget.title} description={details.widget.description} onClick={() => {setProjectRoute(details.route); setActiveView("project-popup");}} />
                 </Grid2>
                 ))}
             </Grid2>

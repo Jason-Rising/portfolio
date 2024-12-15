@@ -1,11 +1,8 @@
-import ProfilePic from '../../assets/images/profile.jpg';
-import Cave from '../../assets/images/projects/beyond_mankind/cave1.jpg';
-import Mountain from '../../assets/images/projects/beyond_mankind/landscape1.jpg';
-import Dragon from '../../assets/images/projects/dragon_forge/swamp_2.jpg';
-
 // Project: Anxiety Revelation of Mind
 import AnxietyBanner from '../../assets/images/projects/anxiety_revelation_of_mind/anxiety_banner.jpg';
+import AnxietyBannerSmall from '../../assets/images/projects/anxiety_revelation_of_mind/anxiety_banner_small.jpg';
 import AnxietyWidget from '../../assets/images/projects/anxiety_revelation_of_mind/anxiey_game.jpg';
+import AnxietyWidgetSmall from '../../assets/images/projects/anxiety_revelation_of_mind/anxiey_game_small.jpg';
 import AnxietyDesolateRoom2 from '../../assets/images/projects/anxiety_revelation_of_mind/screenshots/desolate_room2.jpg';
 import AnxietyHallwayGhost from '../../assets/images/projects/anxiety_revelation_of_mind/screenshots/hallway_ghost.jpg';
 import AnxietyBoilerRoom from '../../assets/images/projects/anxiety_revelation_of_mind/screenshots/boiler_room.jpg';
@@ -15,6 +12,7 @@ import AnxietyObjectPhysics from '../../assets/images/projects/anxiety_revelatio
 
 // Project: Beyond Mankind
 import BeyondMankindBanner from '../../assets/images/projects/beyond_mankind/monastery.jpg';
+import BeyondMankindBannerSmall from '../../assets/images/projects/beyond_mankind/monastery_small.jpg';
 import BeyondMankindCave from '../../assets/images/projects/beyond_mankind/cave1.jpg';
 import BeyondMankindLandscape1 from '../../assets/images/projects/beyond_mankind/landscape1.jpg';
 import BeyondMankindLandscape2 from '../../assets/images/projects/beyond_mankind/landscape2.jpg';
@@ -22,28 +20,42 @@ import BeyondMankindCave2 from '../../assets/images/projects/beyond_mankind/cave
 
 // Project: Dragon Forge
 import DragonForgeBanner from '../../assets/images/projects/dragon_forge/banner.png';
+import DragonForgeBannerSmall from '../../assets/images/projects/dragon_forge/banner_small.png';
 import DragonForgeWidget from '../../assets/images/projects/dragon_forge/widget.jpg';
+import DragonForgeWidgetSmall from '../../assets/images/projects/dragon_forge/widget_small.jpg';
 import DragonForgeMountainView from '../../assets/images/projects/dragon_forge/mountain_view.png';
+import DragonForgeMountainViewSmall from '../../assets/images/projects/dragon_forge/mountain_view_small.png';
 import DragonForgeOceanView from '../../assets/images/projects/dragon_forge/ocean_view.png';
+import DragonForgeOceanViewSmall from '../../assets/images/projects/dragon_forge/ocean_view_small.png';
 import DragonForgeMap from '../../assets/images/projects/dragon_forge/map.gif';
+import DragonForgeMapSmall from '../../assets/images/projects/dragon_forge/map_small.jpg';
 import DragonForgeCity from '../../assets/images/projects/dragon_forge/city.png';
+import DragonForgeCitySmall from '../../assets/images/projects/dragon_forge/city_small.png';
 import DragonForgeDesert from '../../assets/images/projects/dragon_forge/desert.png';
+import DragonForgeDesertSmall from '../../assets/images/projects/dragon_forge/desert_small.png';
 
 // Project: YouTube
 import YoutTubeBanner from '../../assets/images/projects/youtube/youtube_banner.png';
+import YoutTubeBannerSmall from '../../assets/images/projects/youtube/youtube_banner_small.png';
 import YoutTubeWiget from '../../assets/images/projects/youtube/yt_widget.jpg';
+import YoutTubeWigetSmall from '../../assets/images/projects/youtube/yt_widget_small.jpg';
 
 // Project: Sorting Visualiser 
 import SortingVisualiserBanner from '../../assets/images/projects/sorting_visualiser/banner.png';
+import SortingVisualiserBannerSmall from '../../assets/images/projects/sorting_visualiser/banner_small.png';
 import SortingVisualiserWigdet from '../../assets/images/projects/sorting_visualiser/algorithm_visualisation.jpg';
+import SortingVisualiserWigdetSmall from '../../assets/images/projects/sorting_visualiser/algorithm_visualisation_small.jpg';
 
 // Project: VR Lenses
 import VRLensesWidget from '../../assets/images/projects/vr_lenses/lenes_vr.jpg';
+import VRLensesWidgetSmall from '../../assets/images/projects/vr_lenses/lenes_vr_small.jpg';
 import VRLensesBanner from '../../assets/images/projects/vr_lenses/banner.png';
 import VRLensesBannerSmall from '../../assets/images/projects/vr_lenses/banner_small.png';
 
 // Project: Portfolio
 import PortfolioWidget from '../../assets/images/profile_zoom.png';
+import PortfolioWidgetSmall from '../../assets/images/profile_zoom_small.png';
+
 // Technology SVGs
 import UnityLogo from '../../assets/company_logos/unity.svg';
 import BlenderLogo from '../../assets/company_logos/blender.svg';
@@ -61,6 +73,7 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/vr-lenses",
     widget: {
       image: VRLensesWidget,
+      imageS: VRLensesWidgetSmall,
       title: t("vr-lenses.title"),
       description: t("vr-lenses.widget-description"),
     },
@@ -75,7 +88,7 @@ export const ProjectDetailsDTO = (t) => { return [
       translateXMobile: '-0px',
     },
     bannerGradient: true,
-    bannerOpacity: 0.6,
+    bannerOpacity: 0.3,
     overview: t("vr-lenses.overview"),
     technologies: [
       { image: UnityLogo, text: "Unity" },
@@ -98,13 +111,14 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/youtube",
     widget: {
       image: YoutTubeWiget,
+      imageS: YoutTubeWigetSmall,
       title: t("youtube.title"),
       description: t("youtube.widget-description"),
     },
     title: t("youtube.title"),
     banner: {
       imgL: YoutTubeBanner,
-      imgS: YoutTubeBanner
+      imgS: YoutTubeBannerSmall
     },
     bannerTransform: {
       translateY: '-190px',
@@ -134,13 +148,14 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/dragon-forge",
     widget: {
       image: DragonForgeWidget,
+      imageS: DragonForgeWidgetSmall,
       title: t("dragon-forge.title"),
       description: t("dragon-forge.widget-description"),
     },
     title: t("dragon-forge.title"),
     banner: {
       imgL: DragonForgeOceanView,
-      imgS: DragonForgeOceanView
+      imgS: DragonForgeOceanViewSmall
     },
     bannerTransform: {
       translateY: '-175px',
@@ -170,12 +185,12 @@ export const ProjectDetailsDTO = (t) => { return [
       { src: 'https://www.youtube.com/embed/Ad9SL3-ZX9E?si=LsFv__8jYUqR5OWR', title: 'Long Play Demo Stream'}
     ],
     images: [
-      { src: DragonForgeCity, alt: "Cave Encounter" },
-      { src: DragonForgeMap, alt: "Environments" },
-      { src: DragonForgeBanner, alt: "Cave" },
-      { src: DragonForgeOceanView, alt: "Alpine Landscape 2" },
-      { src: DragonForgeDesert, alt: "Cave Encounter" },
-      { src: DragonForgeMountainView, alt: "Alpine Landscape 1" },
+      { src: DragonForgeCity, imgS: DragonForgeCitySmall, alt: "Cave Encounter" },
+      { src: DragonForgeMap, imgS: DragonForgeMapSmall, alt: "Environments" },
+      { src: DragonForgeBanner, imgS: DragonForgeBannerSmall, alt: "Cave" },
+      { src: DragonForgeOceanView, imgS: DragonForgeOceanViewSmall, alt: "Alpine Landscape 2" },
+      { src: DragonForgeDesert, imgS: DragonForgeDesertSmall, alt: "Cave Encounter" },
+      { src: DragonForgeMountainView, imgS: DragonForgeMountainViewSmall, alt: "Alpine Landscape 1" },
     ],
   },
   {
@@ -183,13 +198,14 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/beyond-mankind",
     widget: {
       image: BeyondMankindBanner,
+      imageS: BeyondMankindBannerSmall,
       title: t("beyond-mankind.title"),
       description: t("beyond-mankind.widget-description"),
     },
     title: t("beyond-mankind.title"),
     banner: {
       imgL: BeyondMankindBanner,
-      imgS: BeyondMankindBanner
+      imgS: BeyondMankindBannerSmall
     },
     bannerTransform: {
       translateY: '-100px',
@@ -231,13 +247,14 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/anxiety-revelation-of-mind",
     widget: {
       image: AnxietyWidget,
+      imageS: AnxietyWidgetSmall,
       title: t("anxiety-revelation-of-mind.title"),
       description: t("anxiety-revelation-of-mind.widget-description"),
     },
     title: t("anxiety-revelation-of-mind.title"),
     banner: {
       imgL: AnxietyBanner,
-      imgS: AnxietyBanner
+      imgS: AnxietyBannerSmall
     },
     bannerTransform: {
       translateY: '0px',
@@ -275,13 +292,14 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/sorting-visualiser",
     widget: {
       image: SortingVisualiserWigdet,
+      imageS: SortingVisualiserWigdetSmall,
       title: t("sorting-visualiser.title"),
       description: t("sorting-visualiser.widget-description"),
     },
     title: t("sorting-visualiser.title"),
     banner: {
       imgL: SortingVisualiserBanner,
-      imgS: SortingVisualiserBanner
+      imgS: SortingVisualiserBannerSmall
     },
     bannerTransform: {
       translateY: '-130px',
@@ -316,6 +334,7 @@ export const ProjectDetailsDTO = (t) => { return [
     route: "/portfolio-project",
     widget: {
       image: PortfolioWidget,
+      imageS: PortfolioWidgetSmall,
       title: t("portfolio-project.title"),
       description: t("portfolio-project.widget-description"),
     },
