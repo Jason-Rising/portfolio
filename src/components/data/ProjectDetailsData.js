@@ -40,6 +40,7 @@ import SortingVisualiserWigdet from '../../assets/images/projects/sorting_visual
 // Project: VR Lenses
 import VRLensesWidget from '../../assets/images/projects/vr_lenses/lenes_vr.jpg';
 import VRLensesBanner from '../../assets/images/projects/vr_lenses/banner.png';
+import VRLensesBannerSmall from '../../assets/images/projects/vr_lenses/banner_small.png';
 
 // Project: Portfolio
 import PortfolioWidget from '../../assets/images/profile_zoom.png';
@@ -64,8 +65,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("vr-lenses.widget-description"),
     },
     title: t("vr-lenses.title"),
-    banner: VRLensesBanner,
-    bannerTranslateY: '-250px',
+    banner: {
+      imgL: VRLensesBanner,
+      imgS: VRLensesBannerSmall
+    },
+    bannerTransform: {
+      translateY: '-250px',
+      translateYMobile: '0px',
+      translateXMobile: '-350px',
+    },
     bannerGradient: true,
     bannerOpacity: 0.3,
     overview: t("vr-lenses.overview"),
@@ -94,8 +102,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("youtube.widget-description"),
     },
     title: t("youtube.title"),
-    banner: YoutTubeBanner,
-    bannerTranslateY: '-190px',
+    banner: {
+      imgL: YoutTubeBanner,
+      imgS: YoutTubeBanner
+    },
+    bannerTransform: {
+      translateY: '-190px',
+      translateYMobile: '-180px',
+      translateXMobile: '0px',
+    },
     bannerGradient: true,
     bannerOpacity: 1,
     overview: t("youtube.overview"),
@@ -123,10 +138,17 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("dragon-forge.widget-description"),
     },
     title: t("dragon-forge.title"),
-    banner: DragonForgeOceanView,
-    bannerTranslateY: '-175px',
+    banner: {
+      imgL: DragonForgeOceanView,
+      imgS: DragonForgeOceanView
+    },
+    bannerTransform: {
+      translateY: '-175px',
+      translateYMobile: '-220px',
+      translateXMobile: '-200px',
+    },
     bannerGradient: true,
-    bannerOpacity: 1,
+    bannerOpacity: 0.8,
     overview: t("dragon-forge.overview"),
     technologies: [
       { image: UnityLogo, text: "Unity" },
@@ -165,8 +187,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("beyond-mankind.widget-description"),
     },
     title: t("beyond-mankind.title"),
-    banner: BeyondMankindBanner,
-    bannerTranslateY: '-100px',
+    banner: {
+      imgL: BeyondMankindBanner,
+      imgS: BeyondMankindBanner
+    },
+    bannerTransform: {
+      translateY: '-100px',
+      translateYMobile: '-100px',
+      translateXMobile: '0px',
+    },
     bannerGradient: true,
     bannerOpacity: 1,
     overview: t("beyond-mankind.overview"),
@@ -206,7 +235,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("anxiety-revelation-of-mind.widget-description"),
     },
     title: t("anxiety-revelation-of-mind.title"),
-    banner: AnxietyBanner,
+    banner: {
+      imgL: AnxietyBanner,
+      imgS: AnxietyBanner
+    },
+    bannerTransform: {
+      translateY: '0px',
+      translateYMobile: '-0px',
+      translateXMobile: '-200px',
+    },
     bannerOpacity: 1,
     overview: t("anxiety-revelation-of-mind.overview"),
     technologies: [
@@ -242,8 +279,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("sorting-visualiser.widget-description"),
     },
     title: t("sorting-visualiser.title"),
-    banner: SortingVisualiserBanner,
-    bannerTranslateY: '-130px',
+    banner: {
+      imgL: SortingVisualiserBanner,
+      imgS: SortingVisualiserBanner
+    },
+    bannerTransform: {
+      translateY: '-130px',
+      translateYMobile: '-40px',
+      translateXMobile: '-0px',
+    },
     bannerGradient: true,
     bannerOpacity: 1,
     overview: t("sorting-visualiser.overview"),
@@ -276,8 +320,15 @@ export const ProjectDetailsDTO = (t) => { return [
       description: t("portfolio-project.widget-description"),
     },
     title: t("portfolio-project.title"),
-    banner: VRLensesBanner,
-    bannerTranslateY: '-250px',
+    banner: {
+      imgL: VRLensesBanner,
+      imgS: VRLensesBanner
+    },
+    bannerTransform: {
+      translateY: '-250px',
+      translateYMobile: '0px',
+      translateXMobile: '-350px',
+    },
     bannerGradient: true,
     bannerOpacity: 0.3,
     overview: t("portfolio-project.overview"),

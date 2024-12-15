@@ -41,7 +41,7 @@ function LocaleSelect() {
   function LocaleItem({ img, text, lang }) {
     return (
       <div className="localeItem" onClick={() => handleLocaleChange(lang)}>
-        <img src={img} alt={`${text} flag`} />
+        <img src={img} alt={`${text} flag`} loading="lazy"/>
         <Typography sx={{ fontSize: '14px', userSelect: 'none' }} className="item">
           {text}
         </Typography>

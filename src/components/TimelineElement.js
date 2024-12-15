@@ -31,7 +31,7 @@ function TimelineElement(props) {
                 <Typography variant="h5">{props.title}</Typography>
                 {props.isMobileView && <Typography variant="text">{props.date}</Typography>}
                 <div className="locationContainer">
-                    <img src={locationIcon}></img>
+                    <img src={locationIcon} loading="lazy"></img>
                     <Typography variant="text">{props.location}</Typography>
                 </div>
                 <Typography align={props.isMobileView ? 'auto' : 'justify'} variant="text" ref={textRef} style={

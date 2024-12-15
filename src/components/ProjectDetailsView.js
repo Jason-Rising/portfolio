@@ -11,7 +11,7 @@ const ProjectDetailsView = ({isMobile, projectDetails}) => {
 
   return (
     <div className="project-detail-view">
-        <ProjectDetailsBanner isMobile={isMobile} title={projectDetails.title} bannerImag={projectDetails.banner} bannerOpacity={projectDetails.bannerOpacity} translateY={projectDetails.bannerTranslateY}/>
+        <ProjectDetailsBanner isMobile={isMobile} title={projectDetails.title} bannerImage={projectDetails.banner} bannerOpacity={projectDetails.bannerOpacity} bannerTransform={projectDetails.bannerTransform} translateY={projectDetails.bannerTranslateY}/>
         
         <div className='project-detail-info'>
         <div className='project-detail-info-contianer'>

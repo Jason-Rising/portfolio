@@ -36,6 +36,7 @@
     width: 100%;
     opacity: 0.8;
     min-width: 1000px;
+    position: absolute;
 }
 
 .project-detail-banner:hover .banner-return-text {
