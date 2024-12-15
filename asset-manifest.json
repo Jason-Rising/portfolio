@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.866c359c.css",
-    "main.js": "/portfolio/static/js/main.77475620.js",
+    "main.css": "/portfolio/static/css/main.47ebe7ad.css",
+    "main.js": "/portfolio/static/js/main.b8e0b57f.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/map.gif": "/portfolio/static/media/map.653377842589d0e79da0.gif",
     "static/media/physics.gif": "/portfolio/static/media/physics.74b90911a28ec7750de3.gif",
@@ -20,21 +20,25 @@
     "static/media/landscape1.jpg": "/portfolio/static/media/landscape1.bcb50ad6216857b24041.jpg",
     "static/media/monastery.jpg": "/portfolio/static/media/monastery.fadc405cd8e99959538e.jpg",
     "static/media/landscape2.jpg": "/portfolio/static/media/landscape2.d4b6b500ad61543108c3.jpg",
-    "static/media/swamp_2.jpg": "/portfolio/static/media/swamp_2.32826831ee6b47362c32.jpg",
     "static/media/brytenwalda-studios.svg": "/portfolio/static/media/brytenwalda-studios.380e431f834107ce903b8073a252a9e2.svg",
     "static/media/boiler_room.jpg": "/portfolio/static/media/boiler_room.d4285cb472adfb11538a.jpg",
     "static/media/desolate_room2.jpg": "/portfolio/static/media/desolate_room2.19935652e9373ae01473.jpg",
     "static/media/bg.jpg": "/portfolio/static/media/bg.ba4edd2d98175f5814aa.jpg",
-    "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
     "static/media/banner_small.png": "/portfolio/static/media/banner_small.57fdc620ecec4df05c8e.png",
+    "static/media/unimelb.svg": "/portfolio/static/media/unimelb.1deacfc5f9b04ebe7550de99c52567b8.svg",
+    "static/media/desert_small.png": "/portfolio/static/media/desert_small.b71b795d45d4e7e7dc97.png",
     "static/media/hallway_ghost.jpg": "/portfolio/static/media/hallway_ghost.b36299f8452f0285442d.jpg",
     "static/media/yt_widget.jpg": "/portfolio/static/media/yt_widget.46e2a08e2065843a59d4.jpg",
     "static/media/anxiety_banner.jpg": "/portfolio/static/media/anxiety_banner.efa819243fc0e03a1e53.jpg",
+    "static/media/city_small.png": "/portfolio/static/media/city_small.44c345f52c4f0ba4c6c8.png",
     "static/media/overlay.png": "/portfolio/static/media/overlay.3fba5f6975280db3a12b.png",
     "static/media/widget.jpg": "/portfolio/static/media/widget.f43275cd7e2706676e4b.jpg",
+    "static/media/mountain_view_small.png": "/portfolio/static/media/mountain_view_small.d7af9dc9454c0ddfcfa2.png",
     "static/media/anxiey_game.jpg": "/portfolio/static/media/anxiey_game.d2fddc0cffb3c608e724.jpg",
     "static/media/profile.jpg": "/portfolio/static/media/profile.b0f7dd8d2af82eebe36b.jpg",
     "static/media/lenes_vr.jpg": "/portfolio/static/media/lenes_vr.844fc4fcce42b92f2b88.jpg",
+    "static/media/youtube_banner_small.png": "/portfolio/static/media/youtube_banner_small.9ef719fad1f540cf1542.png",
+    "static/media/ocean_view_small.png": "/portfolio/static/media/ocean_view_small.402dd3f9a59645df2e29.png",
     "static/media/algorithm_visualisation.jpg": "/portfolio/static/media/algorithm_visualisation.82a99b1d88d5259863d1.jpg",
     "static/media/react.svg": "/portfolio/static/media/react.fdb18d78835c70b85bc87fe0ac846312.svg",
     "static/media/maya.svg": "/portfolio/static/media/maya.fa932f7cf4b72affe952a5002cb907e1.svg",
@@ -59,12 +63,12 @@
     "static/media/down-arrow-outline.svg": "/portfolio/static/media/down-arrow-outline.79af318cc55bee4f3ab90db36f1b6982.svg",
     "static/media/de.svg": "/portfolio/static/media/de.98e52210e94ad365289dff606e69f3b4.svg",
     "static/media/down-arrow.svg": "/portfolio/static/media/down-arrow.cd69c6654f72a1d1744a5c3ec598f94c.svg",
-    "main.866c359c.css.map": "/portfolio/static/css/main.866c359c.css.map",
-    "main.77475620.js.map": "/portfolio/static/js/main.77475620.js.map",
+    "main.47ebe7ad.css.map": "/portfolio/static/css/main.47ebe7ad.css.map",
+    "main.b8e0b57f.js.map": "/portfolio/static/js/main.b8e0b57f.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.866c359c.css",
-    "static/js/main.77475620.js"
+    "static/css/main.47ebe7ad.css",
+    "static/js/main.b8e0b57f.js"
   ]
 }
