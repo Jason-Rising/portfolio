@@ -283,6 +283,14 @@ code {
 .widget-img {
   width: 350px;
   height: 200px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.widget-img img {
+  width: 100%;
+  min-height: 100%;
+
 }
 
 .MuiCardMedia-img::after {

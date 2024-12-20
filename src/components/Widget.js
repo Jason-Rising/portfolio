@@ -1,24 +1,19 @@
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
-import React, { useState } from 'react';
+import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 
 function Widget(props) {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const fadeInStyle = {
-    opacity: isLoaded ? 1 : 0, 
-    transition: 'opacity 0.5s ease-in-out', 
+  const blurredBackground = {
+    backgroundImage: `url(${props.imgS})`,
+    backgroundSize: "100%",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: " ", 
   };
-
+  
     return (
         <Card className="widget" >
         <CardActionArea onClick={props.onClick}>
-          <CardMedia className="widget-img"
-            component="img"
-            height="200"
-            image={props.img}
-            alt="todo"
-            onLoad={() => setIsLoaded(true)}
-          > 
-          </CardMedia>
+          <div  className="widget-img" style={blurredBackground}>
+            <img src={props.img} />
+          </div>
           <CardContent sx={{minHeight: '95px'}}>
             <Typography gutterBottom variant="h5" component="div">
               {props.title}
