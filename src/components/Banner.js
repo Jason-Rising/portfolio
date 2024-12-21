@@ -5,18 +5,16 @@ import { ReactComponent as DownArrowIcon } from '../assets/icons/down-arrow-outl
 import SocialIcons from './SocialIcons';
 import LocaleSelect from './LocaleSelect';
 import { useTranslation } from 'react-i18next';
-
-import bannerBackgroundSmall from '../assets/images/bg_small.jpg';
 import bannerBackground from '../assets/images/bg.jpg';
 
 const Banner = ({ onDownArrowClick, isMobile }) => {
   const [t] = useTranslation("global");
-  
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <div className="banner">
       <div className='banner-background'>
-        <img src={bannerBackgroundSmall}/>
-        <img src={bannerBackground}/>
+        <img src={bannerBackground} loading='lazy'/>
         <div className='banner-background-overlay'/>
       </div>
 

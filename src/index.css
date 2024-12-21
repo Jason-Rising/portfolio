@@ -42,6 +42,7 @@ code {
   border-radius: 10px;
   margin-top: 10px;
   margin-left: -100px;
+  z-index: 100;
 }
 
 .content::after {
@@ -101,7 +102,7 @@ code {
   position: fixed;
   height: 100vh;
   width: 30%;
-  background-color: #ddd;
+  background-color: #9d8897;
   overflow: hidden; 
 }
 
@@ -121,6 +122,8 @@ code {
   position: relative;
   width: 100%;
   height: 100%; 
+  background-image: url("./assets/images/overlay.png"), url("./assets/images/bg_small.jpg");
+  background-size: cover, 250%;
   overflow: hidden;
 }
 
@@ -242,6 +245,8 @@ code {
 .banner .profile {
   border-radius: 50%;
   width: 150px;
+  height: 150px;
+  background-color: #ddd;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -255,6 +260,7 @@ code {
 
 .banner .icons img {
   height: 35px;
+  width: 35px;
   opacity: 50%;
 }
 
@@ -314,14 +320,18 @@ code {
 .widget-img {
   width: 350px;
   height: 200px;
-  background-color: red;
+  background-color: #ddd;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .widget-img img {
   width: 100%;
   min-height: 100%;
-
+  object-fit: cover;
+  object-position: center center; 
 }
 
 .MuiCardMedia-img::after {
