@@ -104,6 +104,7 @@ code {
   width: 30%;
   background-color: #9d8897;
   overflow: hidden; 
+  z-index: 2;
 }
 
 .banner-content {

@@ -10,7 +10,7 @@ export const ProjectTimeLineElements = (t) => { return [
         location: t("xero.location"),
         description: t("xero.description"),
         date: t("xero.date"),
-        icon: <img src={Xero} loading="lazy"/>,
+        icon: <img src={Xero}/>,
         isWork: true,
 
     },
@@ -20,7 +20,7 @@ export const ProjectTimeLineElements = (t) => { return [
         location: t("unimelb.location"),
         description: t("unimelb.description"),
         date: t("unimelb.date"),
-        icon: <img src={UniMelbIcon} loading="lazy"/>,
+        icon: <img src={UniMelbIcon}/>,
         isWork: false
     },
     {
@@ -29,7 +29,7 @@ export const ProjectTimeLineElements = (t) => { return [
         location: t("xero-internship.location"),
         description: t("xero-internship.description"),
         date: t("xero-internship.date"),
-        icon: <img src={Xero} loading="lazy"/>,
+        icon: <img src={Xero}/>,
         isWork: true,
     },
     {
@@ -38,7 +38,7 @@ export const ProjectTimeLineElements = (t) => { return [
         location: t("legendstudios.location"),
         description: t("legendstudios.description"),
         date: t("legendstudios.date"),
-        icon: <img src={LegendStudios} loading="lazy"/>,
+        icon: <img src={LegendStudios}/>,
         isWork: true,
 
     },
@@ -48,7 +48,7 @@ export const ProjectTimeLineElements = (t) => { return [
         location: t("brytenwalda.location"),
         description: t("brytenwalda.description"),
         date: t("brytenwalda.date"),
-        icon: <img src={BrytenwaldaStudios} loading="lazy"/>,
+        icon: <img src={BrytenwaldaStudios} />,
         isWork: true,
     }
 ];
