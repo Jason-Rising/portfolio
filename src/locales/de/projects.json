@@ -1,3 +1,63 @@
 {
+    "project": {
+        "overview": "Übersicht",
+        "technologies": "Technologien",
+        "videos": "Videos",
+        "images": "Bilder",
+        "return_to_projects": "Zurück",
+        "projects": "Projekte",
+        "timeline": "Karriere-Zeitleiste"
+    },
+
+    "vr-lenses": {
+        "title": "Lenses VR",
+        "widget-description": "VR-Simulation für verschiedene Augenkrankheiten",
+        "overview": "Lenses VR ist eine Virtual-Reality-Anwendung zur Simulation verschiedener medizinischer Augenkrankheiten. Das Projekt entstand in freiberuflicher Zusammenarbeit mit Dr. David Gunn, einem Augenarzt aus Brisbane, Australien, der VR-Technologie nutzen wollte, um unterschiedliche Augenkrankheiten zu veranschaulichen.\n\nDie Anwendung enthält einen Bereich, in dem Nutzer benutzerdefinierte Linseneffekte konfigurieren können. Diese Voreinstellungen lassen sich in den Erlebnisbereich laden, wo Nutzer eine Linse und eine Umgebung auswählen können, die sie in VR erleben möchten. Innerhalb der VR-Erfahrung können Nutzer zwischen verschiedenen Linsen umschalten, um zu sehen, wie jeder Effekt eine bestimmte Augenkrankheit nachbildet.\n\nAls alleiniger Entwickler war ich für die Anwendungsentwicklung und die Kundeninteraktion verantwortlich. Die Kommunikation erfolgte hauptsächlich per E-Mail, beginnend mit den ersten Gesprächen zur Definition der Projektziele, -vision und des Zeitplans. Im Verlauf des Projekts arbeitete ich agil, stellte regelmäßig Builds zur Überprüfung durch Dr. Gunn zur Verfügung und holte Feedback ein.\n\nDas Projekt wurde erfolgreich in rund vier Monaten abgeschlossen, erfüllte alle funktionalen Anforderungen und übertraf die Erwartungen des Kunden.",
+        "button-view-app": "Anwendung anzeigen"
+    },
+
+    "anxiety-revelation-of-mind": {
+        "title": "Anxiety : Revelation of Mind",
+        "widget-description": "First-Person Survival-Horror-Spiel",
+        "overview": "Anxiety: Revelation of Mind ist ein Survival-Horror-Spiel, das im Ersten Weltkrieg spielt. Es war mein erster Versuch in der Spieleentwicklung und Programmierung. Die Entwicklung war eine bereichernde Erfahrung und motivierte mich, nach der Schule eine Karriere in der Softwareentwicklung zu verfolgen.\n\nDas Spiel wurde mit der Unity-Engine entwickelt und benötigte über ein Jahr (2015–2016) für die Fertigstellung. Dabei sammelte ich wertvolle Erfahrungen in .NET-Architektur und objektorientierten Designmustern sowie bei der Arbeit an Spielmechaniken wie Charakter-Controllern, Rigid-Body-Physik, Zustandsmaschinen, Behavior-Tree-AI und Dateisystemen für Speicherfunktionen.\n\n2016 wurde das Spiel auf Itch.io veröffentlicht, wo es mäßigen Erfolg hatte und von mehreren YouTubern vorgestellt wurde.",
+        "button-text": "Spiel anzeigen"
+    },
+
+    "beyond-mankind": {
+        "title": "Beyond Mankind",
+        "widget-description": "Freiberuflicher Environmental Designer & Entwickler | Brytenwalda Studios",
+        "overview": "Beyond Mankind ist ein Action-RPG, inspiriert von dem Roman 'Evil Genes'.\nEnde 2018 trat ich als Environmental Designer in das Projekt ein. Meine Aufgabe war es, die visuellen Komponenten der Außenszenen zu gestalten und umweltbezogene Features wie dynamische Höhlenbeleuchtungssysteme zu programmieren.\n\nAls semi-offenes Weltspiel bot Beyond Mankind eine wertvolle Gelegenheit, mein Wissen in der Softwareoptimierung zu vertiefen. Ich sammelte praktische Erfahrungen in der Analyse der CPU- und GPU-Leistung und setzte Optimierungstechniken wie Batching, GPU-Instanzierung, Occlusion Culling und Frustum Culling ein.\n\nDas Team war über mehrere Länder und Zeitzonen verteilt, weshalb asynchrone Kommunikation wichtig war. Wir nutzten Tools wie Discord und GitHub, um effizient zu koordinieren. Da viele Teammitglieder remote arbeiteten, pflegten wir klare Profile mit unseren Arbeitszeiten, um Besprechungen in den jeweiligen Zeitzonen zu planen.",
+        "button-website": "Brytenwalda Studios Webseite",
+        "button-steam": "Steam-Seite anzeigen"
+    },
+
+    "dragon-forge": {
+        "title": "Dragon Forge",
+        "widget-description": "Freiberuflicher Environmental Designer & Entwickler | Legendd Studios",
+        "overview": "Dragon Forge ist ein inkrementelles Basisaufbau-Abenteuerspiel, in dem du die Kontrolle über einen legendären Drachen übernimmst, der die wachsende Korruption auf dem Kontinent bekämpfen muss.\n\nIch trat dem Projekt im Oktober 2019 als Haupt-Umwelt-Designer und Künstler bei. Meine Aufgaben umfassten die Entwicklung aller visuellen Elemente des Spiels, die Optimierung der Leistung und die Implementierung von Systemen wie dynamischer Beleuchtung, Animationen und ereignisgesteuerten Umwelteffekten.\n\nLegend Studios, ein kleines Indie-Studio aus den USA, arbeitete mit einem kompakten Team. Als einziger Remote-Entwickler erledigte ich die meiste Arbeit asynchron. Wir nutzten Discord für die Kommunikation und hielten regelmäßige Stand-up-Meetings, um den Fortschritt zu besprechen, Blockaden zu lösen und Aufgaben abzustimmen. Für die Quellcodeverwaltung setzten wir auf einen trunk-basierten Entwicklungsansatz mit GitHub.",
+        "button-website": "Legend Studios Webseite",
+        "button-steam": "Steam-Seite anzeigen"
+    },
+
+    "youtube": {
+        "title": "YouTube Tutorials",
+        "widget-description": "Computing-Tutorials mit Schwerpunkt auf Spieleentwicklung",
+        "overview": "Lehren ist für mich immer eine bereichernde Erfahrung gewesen. Es geht nicht nur um die Freude, anderen dabei zuzusehen, wie sie ihre Fähigkeiten entwickeln und ihr Verständnis vertiefen – sondern auch darum, mein eigenes Wissen zu festigen und weiterzuentwickeln.\n\nGetrieben von dieser Leidenschaft habe ich einen YouTube-Kanal namens Sketch ins Leben gerufen, auf dem ich Inhalte zur Spieleentwicklung mit der Unity-Engine erstelle und teile. Der Kanal ist eine Plattform für Bildung und bietet Tutorials, Tipps und Einblicke für angehende Entwickler.",
+        "button-channel": "Kanal anzeigen"
+    },
     
+    "sorting-visualiser": {
+        "title": "Sortieralgorithmus-Visualizer",
+        "widget-description": "Visualisierung gängiger Sortieralgorithmen",
+        "overview": "Der Sortieralgorithmus-Visualizer ist ein Projekt, das ich entwickelt habe, um mein Verständnis verschiedener Sortieralgorithmen aus meinem Universitätskurs zu vertiefen. Gleichzeitig bot es eine hervorragende Gelegenheit, die Webentwicklung zu erkunden und praktische Erfahrungen mit dem React-Framework zu sammeln.\n\nDie Anwendung visualisiert gängige Sortieralgorithmen und vermittelt Informationen zu deren Zeit- und Speicherkomplexität. Zudem zeigt sie auf, in welchen Kontexten bestimmte Algorithmen besonders effektiv sind und wann ihr Einsatz am sinnvollsten ist.",
+        "button-view-app": "Demo ansehen",
+        "button-view-source-code": "Quellcode ansehen"
+    },
+
+    "portfolio-project": {
+        "title": "Dieses Portfolio",
+        "widget-description": "Dieses Portfolio wurde mit React JS erstellt",
+        "overview": "Dieses Portfolio wurde von Grund auf mit dem React JS-Framework erstellt. Zu den Hauptfunktionen der Seite gehören Lokalisierung, Projektansichten und eine Karriere-Zeitleiste.",
+        "button-view-source-code": "Quellcode ansehen"
+    }
 }
