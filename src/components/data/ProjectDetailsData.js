@@ -131,7 +131,7 @@ export const ProjectDetailsDTO = (t) => { return [
     buttons: [
       {
         text: t("youtube.button-channel"),
-        href: 'https://store.steampowered.com/app/1163930/Dragon_Forge/'
+        href: 'https://www.youtube.com/@sketch3436'
       },
     ],
     videos: [

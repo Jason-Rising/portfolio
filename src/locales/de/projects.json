@@ -25,15 +25,15 @@
 
     "beyond-mankind": {
         "title": "Beyond Mankind",
-        "widget-description": "Freiberuflicher Environmental Designer & Entwickler | Brytenwalda Studios",
-        "overview": "Beyond Mankind ist ein Action-RPG, inspiriert von dem Roman 'Evil Genes'.\nEnde 2018 trat ich als Environmental Designer in das Projekt ein. Meine Aufgabe war es, die visuellen Komponenten der Außenszenen zu gestalten und umweltbezogene Features wie dynamische Höhlenbeleuchtungssysteme zu programmieren.\n\nAls semi-offenes Weltspiel bot Beyond Mankind eine wertvolle Gelegenheit, mein Wissen in der Softwareoptimierung zu vertiefen. Ich sammelte praktische Erfahrungen in der Analyse der CPU- und GPU-Leistung und setzte Optimierungstechniken wie Batching, GPU-Instanzierung, Occlusion Culling und Frustum Culling ein.\n\nDas Team war über mehrere Länder und Zeitzonen verteilt, weshalb asynchrone Kommunikation wichtig war. Wir nutzten Tools wie Discord und GitHub, um effizient zu koordinieren. Da viele Teammitglieder remote arbeiteten, pflegten wir klare Profile mit unseren Arbeitszeiten, um Besprechungen in den jeweiligen Zeitzonen zu planen.",
+        "widget-description": "Freiberuflicher Environment Designer & Entwickler | Brytenwalda Studios",
+        "overview": "Beyond Mankind ist ein Action-RPG, inspiriert von dem Roman 'Evil Genes'.\nEnde 2018 trat ich als Environment Designer in das Projekt ein. Meine Aufgabe war es, die visuellen Komponenten der Außenszenen zu gestalten und umweltbezogene Features wie dynamische Höhlenbeleuchtungssysteme zu programmieren.\n\nAls semi-offenes Weltspiel bot Beyond Mankind eine wertvolle Gelegenheit, mein Wissen in der Softwareoptimierung zu vertiefen. Ich sammelte praktische Erfahrungen in der Analyse der CPU- und GPU-Leistung und setzte Optimierungstechniken wie Batching, GPU-Instanzierung, Occlusion Culling und Frustum Culling ein.\n\nDas Team war über mehrere Länder und Zeitzonen verteilt, weshalb asynchrone Kommunikation wichtig war. Wir nutzten Tools wie Discord und GitHub, um effizient zu koordinieren. Da viele Teammitglieder remote arbeiteten, pflegten wir klare Profile mit unseren Arbeitszeiten, um Besprechungen in den jeweiligen Zeitzonen zu planen.",
         "button-website": "Brytenwalda Studios Webseite",
         "button-steam": "Steam-Seite anzeigen"
     },
 
     "dragon-forge": {
         "title": "Dragon Forge",
-        "widget-description": "Freiberuflicher Environmental Designer & Entwickler | Legendd Studios",
+        "widget-description": "Freiberuflicher Environment Designer & Entwickler | Legendd Studios",
         "overview": "Dragon Forge ist ein inkrementelles Basisaufbau-Abenteuerspiel, in dem du die Kontrolle über einen legendären Drachen übernimmst, der die wachsende Korruption auf dem Kontinent bekämpfen muss.\n\nIch trat dem Projekt im Oktober 2019 als Haupt-Umwelt-Designer und Künstler bei. Meine Aufgaben umfassten die Entwicklung aller visuellen Elemente des Spiels, die Optimierung der Leistung und die Implementierung von Systemen wie dynamischer Beleuchtung, Animationen und ereignisgesteuerten Umwelteffekten.\n\nLegend Studios, ein kleines Indie-Studio aus den USA, arbeitete mit einem kompakten Team. Als einziger Remote-Entwickler erledigte ich die meiste Arbeit asynchron. Wir nutzten Discord für die Kommunikation und hielten regelmäßige Stand-up-Meetings, um den Fortschritt zu besprechen, Blockaden zu lösen und Aufgaben abzustimmen. Für die Quellcodeverwaltung setzten wir auf einen trunk-basierten Entwicklungsansatz mit GitHub.",
         "button-website": "Legend Studios Webseite",
         "button-steam": "Steam-Seite anzeigen"

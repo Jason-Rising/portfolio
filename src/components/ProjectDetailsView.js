@@ -28,7 +28,7 @@ const ProjectDetailsView = ({isMobile, projectDetails}) => {
                 >
                     {t("project.overview")}
                 </Typography>
-                <Typography variant='text' align='justify'>
+                <Typography variant='text' align={isMobile ? 'none' : 'justify'}>
                     {projectDetails.overview.split('\n').map((line, index) => (
                     <React.Fragment key={index}>
                         {line}

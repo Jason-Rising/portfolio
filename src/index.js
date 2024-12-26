@@ -16,23 +16,27 @@ import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import 'lightbox2/dist/css/lightbox.min.css';
 import 'lightbox2/dist/js/lightbox-plus-jquery.min.js';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-i18next.init({
-  interpolation: {escapeValue: false},
-  lng: "en",
-  resources: {
-    en: {
-      global: global_en,
-      projects: projects_en,
-      timeline: timeline_en
+
+i18next
+  .use(LanguageDetector)
+  .init({
+    interpolation: { escapeValue: false },
+    resources: {
+      en: {
+        global: global_en,
+        projects: projects_en,
+        timeline: timeline_en
+      },
+      de: {
+        global: global_de,
+        projects: projects_de,
+        timeline: timeline_de
+      }
     },
-    de: {
-      global: global_de,
-      projects: projects_de,
-      timeline: timeline_de
-    }
-  }
-})
+    fallbackLng: 'en',
+  });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
