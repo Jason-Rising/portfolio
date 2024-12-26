@@ -59,7 +59,7 @@ function LocaleSelect() {
         startIcon={<GlobeIcon width="20" height="20" />}
         endIcon={<DownArrowIcon style={{marginTop:'10px'}} width="15" height="15" />}
       >
-        {lang}
+        {i18n.language}
       </Button>
 
       {/* Dropdown Content */}

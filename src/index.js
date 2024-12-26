@@ -22,6 +22,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 i18next
   .use(LanguageDetector)
   .init({
+    supportedLngs: ['en', 'de'],
     interpolation: { escapeValue: false },
     resources: {
       en: {
