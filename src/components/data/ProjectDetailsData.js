@@ -185,12 +185,12 @@ export const ProjectDetailsDTO = (t) => { return [
       { src: 'https://www.youtube.com/embed/Ad9SL3-ZX9E?si=LsFv__8jYUqR5OWR', title: 'Long Play Demo Stream'}
     ],
     images: [
-      { src: DragonForgeCity, imgS: DragonForgeCitySmall, alt: "Cave Encounter" },
+      { src: DragonForgeCity, imgS: DragonForgeCitySmall, alt: "Village Tower" },
       { src: DragonForgeMap, imgS: DragonForgeMapSmall, alt: "Environments" },
-      { src: DragonForgeBanner, imgS: DragonForgeBannerSmall, alt: "Cave" },
-      { src: DragonForgeOceanView, imgS: DragonForgeOceanViewSmall, alt: "Alpine Landscape 2" },
-      { src: DragonForgeDesert, imgS: DragonForgeDesertSmall, alt: "Cave Encounter" },
-      { src: DragonForgeMountainView, imgS: DragonForgeMountainViewSmall, alt: "Alpine Landscape 1" },
+      { src: DragonForgeBanner, imgS: DragonForgeBannerSmall, alt: "Forest Environment" },
+      { src: DragonForgeOceanView, imgS: DragonForgeOceanViewSmall, alt: "Ocean Cliff Side"},
+      { src: DragonForgeDesert, imgS: DragonForgeDesertSmall, alt: "Desert Environment" },
+      { src: DragonForgeMountainView, imgS: DragonForgeMountainViewSmall, alt: "Dragon Statue" },
     ],
   },
   {
