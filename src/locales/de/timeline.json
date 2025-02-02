@@ -2,13 +2,13 @@
     "xero": {
         "title": "Softwareentwickler",
         "location": "Xero",
-        "description": "Arbeitete im Integrationsteam mit Fokus auf die Backend-Integration interner und externer Dienste. Sammelte umfassende Erfahrung in der Verwaltung von AWS-Umgebungen und der Bereitstellung von Infrastruktur, einschließlich Tests und DevOps-Pipelines. Setzte zuverlässig Alarmierungs- und Überwachungssysteme mit Tools wie New Relic und Sumo Logic um. Zu den Schlüsseltechnologien gehören C#, Node.js, Kotlin, Terraform und SQL sowie umfangreiche Erfahrung mit Cloud-Diensten wie EC2, ECS, SNS, Step Functions und Lambda.",
+        "description": "Ich arbeitete im Integrationsteam mit Fokus auf die Backend-Integration interner und externer Dienste. Ich habe umfassende Erfahrung in der Verwaltung von AWS-Umgebungen und der Bereitstellung von Infrastruktur, einschließlich Tests und DevOps-Pipelines. Setzte zuverlässig Alarmierungs- und Überwachungssysteme mit Tools wie New Relic und Sumo Logic um. Zu den Schlüsseltechnologien gehören C#, Node.js, Kotlin, Terraform und SQL sowie umfangreiche Erfahrung mit Cloud-Diensten wie EC2, ECS, SNS, Step Functions und Lambda.",
         "date": "2022 - Gegenwart"
     },
     "xero-internship": {
         "title": "Softwareentwickler - Praktikum",
         "location": "Xero",
-        "description": "Absolvierte eine dreimonatige Rotation im Developer-Evangelist-Team. Dabei arbeitete ich an der Weiterentwicklung des Xero .NET-SDKs und betreute das externe Marketplace-Programm, das Unternehmen die Integration in die Xero-Plattform ermöglicht. Zu den Highlights gehörten die Entwicklung einer Beispielanwendung zur Demonstration der SDK-Funktionen sowie die Erstellung eines Videos und eines Blogposts zur Einführung der neuen Webhook-Funktion.",
+        "description": "Ich absolvierte eine dreimonatige Rotation im Developer-Evangelist-Team. Dabei arbeitete ich an der Weiterentwicklung des Xero .NET-SDKs und betreute das externe Marketplace-Programm, das Unternehmen die Integration in die Xero-Plattform ermöglicht. Zu den Highlights gehörten die Entwicklung einer Beispielanwendung zur Demonstration der SDK-Funktionen sowie die Erstellung eines Videos und eines Blogposts zur Einführung der neuen Webhook-Funktion.",
         "date": "Nov 2020 - Feb 2021"
     },
     "unimelb": {
@@ -20,7 +20,7 @@
     "legendstudios": {
         "title": "Environment Artist und Softwareentwickler",
         "location": "Legend Studios",
-        "description": "Ich trat als freiberuflicher Spieledesigner bei Legend Studios in den USA ein und arbeitete an Dragon Forge, einem inkrementellen Basisaufbau-Abenteuerspiel. Meine Aufgabe war die Gestaltung aller visuellen Aspekte des Spiels, einschließlich der Leistungoptimierung und der Implementierung umweltbezogener Systeme wie dynamische Beleuchtung, Animationen und ereignisgesteuerte Umwelteffekte.",
+        "description": "Ich trat als freiberuflicher Spieledesigner bei Legend Studios in den USA ein und arbeitete an Dragon Forge, einem inkrementellen Basisaufbau-Abenteuerspiel. Meine Aufgabe war die Gestaltung aller visuellen Aspekte des Spiels, einschließlich der Leistungsoptimierung und der Implementierung umweltbezogener Elemente wie dynamische Beleuchtung, Animationen und ereignisgesteuerte Umwelteffekte.",
         "date": "2020 - 2021"
     },
     "brytenwalda": {
