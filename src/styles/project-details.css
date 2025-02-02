@@ -123,6 +123,13 @@
     padding: 10% 15% 10% 15%;
 }
 
+@media (max-width: 1300px) {
+    .project-detail-info-contianer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 @media (max-width: 980px)  {
     .project-detail-banner {
         animation: fadeInTop 0.5s ease-out forwards; 

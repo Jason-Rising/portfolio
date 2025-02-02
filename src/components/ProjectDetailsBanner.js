@@ -14,6 +14,7 @@ const ProjectDetailsBanner = (props) => {
         transition: 'opacity 0.5s ease-in-out', 
         transform: `translateY(${props.isMobile ? props.bannerTransform.translateYMobile : props.bannerTransform.translateY}) 
                     translateX(${props.isMobile ? props.bannerTransform.translateXMobile : '0px'})`,
+        willChange: 'transform'
     };
 
     const loadingBlurredBannerStyle = {
@@ -23,6 +24,7 @@ const ProjectDetailsBanner = (props) => {
         backgroundAttachment: " ", 
         backgroundPosition: `${props.isMobile ? props.bannerTransform.translateXMobile : "0px"} 
                                 ${props.isMobile ? props.bannerTransform.translateYMobile : props.bannerTransform.translateY}`,
+        willChange: 'transform'
     };      
 
     return (
